@@ -27,13 +27,15 @@ Carregar o contribuinte no CADESP e definir a empresa usada nas demais funções
 
 Situação: Disponível
 
-1. Informe o CNPJ base de oito dígitos e carregue os dados.
-2. Confira nome, matriz, estabelecimentos e situação cadastral antes de continuar.
-3. Para trabalhar com outra empresa, desvincule ou carregue o outro contribuinte e confira novamente.
+1. Informe o CNPJ base com oito dígitos e use Carregar contribuinte.
+2. Acompanhe o Andamento e confira nome empresarial, matriz, IE, atividade, capital social, estabelecimentos e situação retornados pelo CADESP.
+3. Confirme o indicador de contribuinte vinculado antes de usar páginas que dependem dessa empresa.
+4. Limpar campos remove o texto digitado, mas não desvincula o contribuinte carregado. Para trocar de empresa, carregue outra ou use a ação de desvincular disponível no fluxo da Notificação Inicial; depois confira novamente os dados.
 
 Cuidados:
-- O contribuinte vinculado determina os destinatários e arquivos de várias ações. Não use apenas o número digitado em outra tela como confirmação.
+- O contribuinte vinculado determina destinatários, documentos e caminhos de arquivos em várias ações. Não use apenas o número digitado em outra tela como confirmação.
 - Falha na consulta não confirma inexistência do contribuinte nem substitui uma pesquisa cadastral válida.
+- Ao trocar ou desvincular, confirme que as páginas seguintes exibem a empresa esperada antes de iniciar uma operação que grava dados.
 
 ## Início de acompanhamento > Atribuir empresa
 
@@ -54,13 +56,15 @@ Listar os próprios acompanhamentos e iniciar o acompanhamento do contribuinte v
 
 Situação: Disponível
 
-1. Confira o contribuinte vinculado e use Listar acompanhados para consultar seus acompanhamentos.
-2. Para iniciar, confira a confirmação apresentada antes de autorizar a gravação no PGDT.
-3. Confira o retorno e, se necessário, a situação no PGDT.
+1. Confira o contribuinte vinculado em Dados do contribuinte. Em Contribuintes acompanhados, use Listar acompanhados para carregar a lista retornada pelo PGDT.
+2. Confira na tabela CNPJ-base, razão social, setorial, saldo devedor, débitos, dias acompanhado e dias desde o último acionamento. Limpar consulta apaga somente a tabela exibida.
+3. Para iniciar, use Iniciar acompanhamento e leia a confirmação com o contribuinte e o login do auditor antes de autorizar a gravação.
+4. Confira o retorno da ação no Andamento e, se necessário, atualize a lista para verificar o estado no PGDT.
 
 Cuidados:
-- Iniciar acompanhamento grava no PGDT. A ferramenta recusa contribuinte que já esteja entre seus acompanhados.
-- Não repita uma operação com resultado incerto sem conferir o PGDT. A ajuda não altera o responsável nem autoriza acompanhamento de outra equipe.
+- Listar acompanhados é consulta; iniciar acompanhamento grava no PGDT. A ferramenta recusa contribuinte que já esteja entre seus acompanhados.
+- Não repita uma operação com resultado incerto sem conferir o PGDT. Cancelar não desfaz uma gravação já concluída.
+- A ajuda não altera o responsável nem autoriza acompanhamento de outra equipe.
 
 ## Início de acompanhamento > Notificação inicial
 
@@ -68,18 +72,20 @@ Baixar pesquisas, preparar a notificação inicial e conduzir seu envio e regist
 
 Situação: Disponível
 
-1. Em Baixar pesquisas, confira o contribuinte, o período inicial e final em mês/ano e as pesquisas marcadas. Configure os relatórios necessários antes da primeira consulta.
-2. Execute a consulta e acompanhe o Andamento. Se houver sucesso parcial, use Resolver pendências depois de conferir o que faltou.
-3. Em Preparar notificação, confira o início da inadimplência e os períodos dos três gráficos. Por padrão, os dados mais recentes disponíveis são usados; a seleção manual exige carregar os arquivos escolhidos.
-4. Confira as decisões sobre parágrafos opcionais e avisos de dados ausentes, gere o documento e revise-o antes de converter em PDF ou assinar. Campos pendentes e trechos de decisão exigem revisão humana.
-5. Em Envio da notificação, confira mensagem e PDF. Apenas preparar rascunho DEC não envia; Enviar DEC exige confirmação e envia uma nova mensagem.
-6. Em Registro no PGDT, confira tipo, relato, notificação e comprovante do DEC, quando aplicável, antes de confirmar. Confira separadamente o retorno de envio e o de registro.
+1. Em Baixar pesquisas, confira o contribuinte vinculado e os períodos inicial e final em mês/ano. Marque as pesquisas necessárias: Classificação Nos Conformes e relatórios do Launchpad, além de CADESP, Débitos Declarados Não Inscritos ou Débitos Declarados Inscritos quando forem necessários.
+2. Abra Personalizar consultas para escolher o modo do CADESP e a origem dos Débitos Inscritos. Confira os relatórios e IDs configurados em Configurações antes de iniciar. Baixe as pesquisas e acompanhe cada resultado no Andamento.
+3. Se a execução terminar parcialmente, confira quais itens faltaram e use Resolver pendências; essa ação tenta novamente apenas o que não foi concluído. Use Abrir arquivos para conferir os arquivos baixados.
+4. Em Preparar notificação, confira o Início da inadimplência e o período de cada gráfico. Use as miniaturas para escolher e ajustar o período; Carregar gráficos novamente relê as planilhas. Para usar planilhas antigas, selecione ambas e clique Carregar; Limpar volta aos arquivos mais recentes.
+5. Confira a decisão dos parágrafos opcionais e avisos de dados ausentes. Gere a notificação e revise o DOCX, inclusive campos amarelos e trechos que dependem do auditor. Se desejar, abra o DOCX/PDF no visualizador; Converter em PDF exige que o documento esteja fechado e sincronizado. A caixa de assinatura controla a assinatura digital do PDF.
+6. Em Envio da notificação, confira o PDF usado. O padrão é a notificação gerada na etapa anterior; desmarque o uso automático para selecionar outro PDF. Escolha Apenas preparar rascunho DEC ou Enviar DEC e confira o resultado no Andamento.
+7. Em Registro no PGDT, confira os documentos padrão encontrados ou use Seleção manual. Revise data e relato do acionamento e confirme antes de Registrar Acionamento (PGDT). Confira separadamente o resultado do envio DEC e do registro PGDT.
 
 Cuidados:
-- Alterar o período dos gráficos não baixa pesquisas novas. Confira a atualidade dos dados e a compatibilidade com o documento.
-- O documento aberto para edição precisa estar fechado e sincronizado antes da conversão em PDF.
-- Sem confirmação do envio, confira Consultar mensagens no DEC antes de repetir. Registro no PGDT pode ter sido gravado mesmo se um anexo falhou depois.
-- A assinatura do PDF pode pedir seu próprio PIN. Confira assinaturas em leitor adequado; um aviso do visualizador não prova sozinho que a assinatura seja inválida.
+- Alterar o período dos gráficos não baixa pesquisas novas. Confira a data e a cobertura das planilhas antes de gerar o documento.
+- As pesquisas complementares têm critérios próprios e não são substituídas pela seleção manual das planilhas usadas nos gráficos/notificação.
+- O documento aberto para edição precisa estar fechado e sincronizado antes da conversão em PDF. Campos amarelos e trechos de decisão exigem revisão humana.
+- Sem confirmação do envio, confira Consultar mensagens no DEC antes de repetir. O registro no PGDT pode ter sido gravado mesmo se um anexo falhou depois.
+- Enviar DEC e registrar no PGDT são ações diferentes. A assinatura do PDF pode pedir seu próprio PIN; confira assinaturas em leitor adequado.
 
 ## Início de acompanhamento > Criar processo SEI
 
@@ -87,14 +93,17 @@ Preparar documentos e criar o processo SEI para o contribuinte vinculado.
 
 Situação: Disponível
 
-1. Em Documentos para inclusão, confira o contribuinte e escolha os documentos, o modo do CADESP e os arquivos manuais necessários.
-2. Confira os documentos reaproveitados e, quando solicitado, escolha entre baixar novamente ou usar os disponíveis. Confira o período dos débitos.
-3. Na aba Criar processo SEI, revise os dados do processo, assunto, especificação, interessado e anexos antes de executar a criação.
-4. Confira o resultado e os documentos efetivamente incluídos.
+1. Em Documentos para inclusão, confira o CNPJ da matriz vinculado em Dados do contribuinte. Em Documentação padrão, marque os itens desejados: CADESP, Débitos Declarados Não Inscritos, Débitos Declarados Inscritos, Notificação Inicial, DEC com envio da Notificação Inicial e Outros.
+2. Em Personalizar consultas, escolha o modo do CADESP e a origem dos Débitos Inscritos. Confira o período dos Débitos Não Inscritos. Se os arquivos necessários já existem, confira se serão reaproveitados; quando a tela perguntar, escolha usar os disponíveis ou refazer a busca.
+3. Use Seleção manual para escolher os documentos diretamente. Nos itens numerados, selecione o PDF correspondente; em Outros, pode selecionar um ou mais arquivos. Confira o status de cada item e use Preparar documentação. Preparar documentos não cria o processo.
+4. Na aba Criar processo SEI, escolha Criar SEI e Incluir Documentos (1 passo) ou o fluxo em 2 passos. Revise, se necessário, assunto e especificação; confira interessado, número do processo e documentos preparados.
+5. Execute a criação/inclusão e acompanhe o Andamento. No fluxo de 2 passos, confira o retorno de Criar SEI antes de usar Incluir documentos. Verifique os documentos efetivamente incluídos.
 
 Cuidados:
-- Criar o processo altera o SEI. Abrir a tela ou preparar documentos não equivale a criar o processo.
-- Confira PDFs de notificação e DEC escolhidos manualmente. Não presuma que um comprovante de outra mensagem corresponda ao envio atual.
+- Criar o processo e incluir documentos alteram o SEI. Leia as confirmações; preparar documentação não equivale a criar o processo.
+- O processo usa o CNPJ da matriz do contribuinte vinculado. Sem contribuinte carregado, a criação é recusada.
+- Confira que cada PDF manual corresponde ao contribuinte e ao envio pretendidos. O comprovante DEC precisa corresponder à mensagem enviada.
+- Uma falha na inclusão após a criação pode deixar o processo criado com documentos faltando. Confira o SEI antes de repetir para evitar duplicidade.
 
 ## Início de acompanhamento > Reunião inicial
 
@@ -113,16 +122,18 @@ Preparar ou enviar mensagem pelo DEC e registrar o acionamento no PGDT.
 
 Situação: Disponível
 
-1. Confira o contribuinte e marque os estabelecimentos destinatários. Revise complemento, classificação, texto e anexos.
-2. Use o modelo apropriado e confira o texto final. Ao selecionar anexos, corrija nomes recusados; nomes com parênteses não são aceitos.
-3. Escolha preparar rascunhos ou enviar. Rascunho não envia; o envio pede confirmação e pode concluir alguns destinatários e falhar em outros.
-4. Confira o resultado por destinatário e os PDFs dos DEC enviados. Resolver pendências repete somente as pendências oferecidas.
-5. Para registrar no PGDT, confira o tipo de acionamento, o relato e os anexos. Se o envio ocorreu mas o PDF não foi baixado, obtenha o comprovante e escolha-o manualmente.
+1. Confira o contribuinte vinculado e selecione os estabelecimentos destinatários. Cada destinatário recebe uma mensagem própria.
+2. Revise Categoria, Tributo, Tipo e Assunto em Classificação da mensagem. Confira o complemento do assunto, o texto e os anexos PDF; pode usar um modelo salvo ou gerenciar os próprios modelos.
+3. Escolha Apenas preparar rascunho DEC ou Enviar DEC. O rascunho não envia; o envio exige confirmação. Acompanhe o resultado de cada destinatário.
+4. Se houver falhas, confira o status por destinatário e use Resolver pendências para repetir somente os estabelecimentos oferecidos. Confira o PDF de cada mensagem enviada.
+5. Na aba Registro no PGDT, confira os anexos automáticos dos DEC enviados ou use Seleção manual. Revise data, tipo de acionamento e relato; o texto automático acompanha a mensagem efetivamente enviada enquanto não for editado. Confirme para registrar.
 
 Cuidados:
-- Confira mensagens no DEC antes de repetir qualquer envio incerto. Cancelar não desfaz um envio já feito.
-- Trocar o texto ou modelo depois do envio não muda a mensagem enviada. O registro automático deve refletir o que realmente saiu no DEC.
-- Acompanhamento mensal e Notificação final mantêm textos e seleções separados. Aguarde uma operação terminar antes de alternar entre elas.
+- O DEC pode rejeitar anexos por nome; nomes com parênteses não são aceitos. Confira o aviso e a lista antes de enviar.
+- Não repita envio incerto: confira Consultar mensagens no DEC. Cancelar não desfaz envio já concluído.
+- Trocar o texto ou modelo depois do envio não altera a mensagem enviada. Se o envio foi concluído mas o PDF não foi baixado, obtenha o comprovante e escolha-o manualmente antes do registro PGDT.
+- Acompanhamento mensal e Notificação final mantêm destinatários, texto e pendências separados. Aguarde a operação terminar antes de alternar entre elas.
+- Enviar DEC e registrar o acionamento no PGDT são gravações distintas. Se o registro falhar após o DEC, confira cada sistema antes de tentar novamente.
 
 ## Regimes Especiais de Ofício > Nota a Nota
 
@@ -130,13 +141,16 @@ Baixar pesquisas do contribuinte e preparar a análise Nota a Nota.
 
 Situação: Disponível
 
-1. Confira o contribuinte vinculado e as datas inicial e final solicitadas na tela, no formato ano, mês e dia.
-2. Selecione as pesquisas necessárias e execute. O período inicial sugerido corresponde ao mês anterior completo.
-3. Confira o resultado de cada pesquisa no Andamento e os arquivos separados por período. A análise depende de NFe e DAREs concluídas com sucesso na mesma execução.
+1. Confira o contribuinte vinculado e informe as datas inicial e final em DD/MM/AAAA; o calendário também pode ser usado. O período sugerido é o mês completo anterior.
+2. Marque as pesquisas necessárias: NFe (SP), NFe (Outras UFs), NFe NCMs (SP), NFe NCMs (Outras UFs), CTe e DAREs. Se DAREs estiver marcada, confira se o ID do relatório foi configurado em Configurações > Relatórios.
+3. Use Baixar pesquisas e acompanhe cada pesquisa no Andamento. Os relatórios são salvos em pastas separadas por período.
+4. Quando NFe e DAREs concluírem com sucesso na mesma execução, confira a planilha Analise REO Nota-a-Nota e o resumo na tela. Informe o percentual exigido de ICMS Opp antes de interpretar o resumo; ICMS-ST usa o percentual indicado na tela.
 
 Cuidados:
-- Download parcial não significa análise completa. Confira falhas e avisos antes de utilizar os resultados.
-- A existência de relatórios de rodadas diferentes não substitui os requisitos da análise da execução atual.
+- A análise depende de NFe e DAREs concluídas com sucesso na mesma execução. Arquivos de rodadas diferentes não completam esse requisito.
+- Download parcial não significa análise completa. Confira falhas e avisos antes de usar o resultado.
+- O resumo apresenta alertas e estimativas para revisão; não altera códigos nem confirma, sozinho, irregularidade ou valor devido.
+- Nova análise preserva a anterior como nova versão. Confira o período e os arquivos antes de compartilhar a planilha.
 
 ## Regimes Especiais de Ofício > Controle de emissão
 
@@ -144,12 +158,14 @@ Consultar as quantidades de documentos fiscais eletrônicos emitidos no período
 
 Situação: Disponível
 
-1. Confira o contribuinte e o período em mês/ano.
-2. Baixe a pesquisa e consulte as tabelas RESUMO, CNPJ BASE e Por CNPJ.
-3. Use a rolagem horizontal quando necessário e confira os cabeçalhos antes de comparar valores.
+1. Confira o contribuinte vinculado e informe o período inicial e final em MM/AAAA, usando o calendário se preferir.
+2. Use Baixar pesquisa e acompanhe o Andamento. A consulta exige que o relatório Qtde Docs Fiscais Emitidos esteja configurado em Configurações > Relatórios.
+3. Confira as abas RESUMO, CNPJ BASE e Por CNPJ. Dentro de cada aba, compare os blocos e cabeçalhos; use a rolagem horizontal quando aparecer.
+4. Use Abrir arquivos para conferir a planilha salva na pasta Controle de Emissão do contribuinte.
 
 Cuidados:
 - Configure o relatório correspondente antes de consultar. Célula vazia ou ausência de identificação no relatório não deve ser interpretada automaticamente como zero ou inexistência de emissão.
+- Confira o período e a identificação das tabelas antes de usar os totais em outra análise.
 
 ## Outras medidas restritivas > Parcelamento com garantia
 
@@ -181,14 +197,17 @@ Preparar ou enviar a notificação de encerramento pelo DEC e registrar o aciona
 
 Situação: Disponível
 
-1. Confira o contribuinte, destinatários e o modelo de Notificação de Encerramento de Acompanhamento.
-2. Revise complemento, texto, classificação e anexos. Escolha rascunho ou envio e confira a confirmação antes de enviar.
-3. Confira o retorno por destinatário e o PDF da mensagem enviada.
-4. Se registrar no PGDT, confira o tipo Encerramento do Acompanhamento, relato e anexos antes de confirmar.
+1. Confira o contribuinte vinculado e selecione os estabelecimentos destinatários. A primeira abertura usa o modelo Notificação de Encerramento de Acompanhamento.
+2. Revise Categoria, Tributo, Tipo e Assunto; confira complemento, texto e anexos PDF. Use um modelo salvo se desejar e confira o texto preenchido.
+3. Escolha Apenas preparar rascunho DEC ou Enviar DEC. Rascunho não envia; o envio pede confirmação e pode ter resultado diferente por destinatário.
+4. Confira o retorno e o PDF de cada destinatário. Se houver erro, use Resolver pendências apenas para os destinatários apresentados.
+5. Na aba Registro no PGDT, confira os anexos dos DEC enviados ou escolha arquivos manualmente. Revise data, tipo Encerramento do Acompanhamento e relato antes de registrar.
 
 Cuidados:
 - Enviar a notificação final não equivale a encerrar o acompanhamento no PGDT. Essa é uma ação separada.
-- Valem os mesmos cuidados do Acompanhamento mensal: não repetir envio incerto, conferir anexos e respeitar os destinatários de cada rodada.
+- Acompanhamento mensal e Notificação final mantêm textos, destinatários e pendências separados.
+- Não repita envio incerto; confira Consultar mensagens no DEC. Cancelar não desfaz um envio já feito.
+- O registro PGDT pode falhar depois do envio DEC ou do próprio registro; confira cada sistema e anexo antes de repetir.
 
 ## Encerramento > Encerrar (PGDT)
 
@@ -217,17 +236,20 @@ Cuidados:
 
 ## NIRA > Grupos
 
-Organizar grupos e abrir o trabalho cadastral e de pesquisa do Recon.
+Criar e organizar grupos privados de empresas para o trabalho cadastral e de pesquisa no Recon.
 
 Situação: Beta; acesso restrito à equipe autorizada
 
-1. Escolha um grupo existente ou crie Novo grupo, usando CNPJs-base ou OSFs conforme a opção da tela.
-2. Confira as empresas resolvidas antes de continuar. Novo grupo pode iniciar consultas cadastrais; abrir um grupo existente usa os dados salvos, sem refazer as pesquisas.
-3. Ao arquivar, confira a seleção. Um grupo arquivado permanece para consulta e precisa ser restaurado antes de alterações.
+1. Em Grupos, escolha um grupo existente para continuar com os dados salvos ou use Novo grupo para iniciar outro.
+2. No formulário, informe o nome e selecione a entrada por CNPJs-base ou por OSFs conforme o modo disponível. Confira a lista resolvida antes de salvar.
+3. Abra Visão Geral para conferir as empresas, pessoas, coletas, cobertura e diligências do grupo. Abrir um grupo existente não refaz pesquisas automaticamente.
+4. Use Editar para corrigir o nome ou a composição permitida. Para retirar temporariamente, arquive e use Restaurar quando voltar ao trabalho.
+5. Use Excluir grupo somente após conferir o grupo selecionado e a confirmação: a exclusão apaga os dados e diligências guardados naquele grupo.
 
 Cuidados:
-- Os grupos pertencem ao usuário identificado. Não use a ajuda para pedir conteúdo de grupos de outra pessoa.
-- A ferramenta organiza informações; vínculos e coincidências isolados não comprovam grupo econômico.
+- Os grupos e suas anotações são privados do usuário autorizado. Não use a ajuda para consultar dados de outro auditor.
+- Excluir o grupo é definitivo para os dados no Recon e não é desfeito por Cancelar; arquivos que já foram exportados para a pasta compartilhada não são apagados por essa ação.
+- O grupo organiza dados e pesquisas; empresas no mesmo grupo, sócios em comum ou endereços coincidentes não comprovam grupo econômico.
 
 ## NIRA > Visão Geral
 
@@ -235,15 +257,17 @@ Acompanhar a cobertura das pesquisas salvas, o checklist e diferenças entre col
 
 Situação: Beta; Mudanças entre coletas é provisório nesta edição
 
-1. Abra um grupo e confira o resumo, as fontes, datas e pendências das pesquisas.
-2. No Checklist de análises, selecione a ficha investigada e registre situação, observação e justificativa quando necessário. Desmarcar uma ficha não apaga seu preenchimento.
-3. Compare coletas disponíveis da mesma empresa e confira a cobertura antes de interpretar diferenças. Revise humanamente as mudanças indicadas e registre o que foi conferido.
-4. Crie diligências vinculadas quando houver providência a acompanhar.
+1. Selecione o grupo e confira as abas Resumo do grupo, Checklist de análises e Comparar coletas. O resumo reúne cobertura e datas das pesquisas salvas, pendências e próximas diligências.
+2. No Checklist de análises, marque as fichas que serão avaliadas e escolha o investigado. Registre a situação de cada consulta, observação e justificativa quando aplicável; os itens OUTRO exigem um nome próprio.
+3. Se uma consulta não se aplica, escolha Não aplicável e registre a justificativa. Para registrar outra consulta, escolha OUTRO e informe o nome antes de salvar ou concluir.
+4. Em Comparar coletas, selecione duas coletas CADESP da mesma empresa. Confira os valores anterior e posterior e a cobertura de cada coleta; diferenças sugeridas exigem revisão humana.
+5. Na área Mudanças entre coletas, revise cada diferença, abra a origem ou ficha e registre o que foi conferido. Se houver providência, crie uma diligência vinculada ao item.
 
 Cuidados:
-- Pesquisa não consultada, parcial ou com falha não significa resultado negativo. Evidências salvas não concluem automaticamente o checklist.
-- A ausência em coleta parcial não comprova saída de sócio, encerramento de vínculo ou data de alteração. Endereços coincidentes não comprovam ocupação simultânea.
-- Coletas antigas não se atualizam apenas por abrir a tela. Repita explicitamente as pesquisas necessárias.
+- Pesquisa não consultada, parcial ou com falha não significa resultado negativo. Evidências salvas não concluem o checklist automaticamente; desmarcar uma ficha da seleção não apaga o preenchimento.
+- A ausência de um sócio em coleta parcial não comprova saída, data de alteração ou encerramento de vínculo. Uma diferença entre coletas é um ponto para conferência, não uma conclusão.
+- Mudanças entre coletas aparece como recurso provisório nesta edição. Endereços coincidentes são comparações textuais dos dados salvos e não comprovam residência simultânea ou grupo econômico.
+- Coletas antigas não se atualizam apenas por abrir a tela. Execute novamente as pesquisas necessárias e confira a cobertura antes de comparar.
 
 ## NIRA > Recon
 
@@ -251,17 +275,29 @@ Consultar e organizar empresas, pessoas, contabilistas, endereços e históricos
 
 Situação: Beta; acesso restrito à equipe autorizada
 
-1. Abra um grupo e confira as empresas e fichas selecionadas antes de consultar CADESP, veículos, Dívida Ativa, PGSF ou Smart-Sefaz.
-2. Escolha explicitamente cada consulta e acompanhe o resultado e sua data. Abrir uma ficha não realiza consulta nova.
-3. Nas fichas, confira a origem de endereços, contatos e vínculos. Edite somente as informações manuais pretendidas; elas não alteram o cadastro de origem.
-4. Na pesquisa de contabilista, confira o documento e a cobertura dos resultados antes de selecionar empresas para inclusão. Vínculo contábil não equivale a vínculo societário.
-5. Ao exportar fichas ou documentos, escolha uma pasta com acesso restrito.
+1. Selecione um grupo ativo e use as abas Sócios, Pessoas fora do QSA, Empresas, Contabilistas, Endereços e Veículos. Visão do grupo retorna à tabela principal; abrir uma ficha mostra os dados salvos, sem iniciar consulta.
+2. Em Sócios, confira os registros CADESP atuais, históricos (H), excluídos do histórico e a etapa da última coleta. Filtre por empresa, situação e trabalho; alterne Detalhada/Resumida e a ordenação. Selecione fichas para abrir, arquivar/restaurar ou pesquisar.
+3. Para pesquisar uma pessoa, selecione a ficha com CPF/CNPJ completo confirmado e use Pesquisar no CADESP. Escolha Participante / Representante, Contabilista ou Procurador Eletrônico; confira se deve manter ou substituir pesquisas anteriores do mesmo tipo.
+4. Para localizar empresas relacionadas a uma pessoa segundo o CADESP, abra o resultado da pesquisa, confira documento, situação, estabelecimentos e cobertura de páginas, marque somente as empresas pretendidas e use Incluir empresas no grupo. Decida se consulta apenas as novas empresas ou atualiza também as existentes.
+5. Em Pessoas fora do QSA, use Adicionar pessoa para registrar alguém relevante sem atribuir participação societária. Informe nome, motivo e fonte/referência; CPF é opcional e a confirmação é uma classificação informada pelo auditor. Use Arquivados para localizar/restaurar cadastros independentes.
+6. Em Empresas, filtre empresas no grupo ou arquivadas/retiradas e confira a etapa CADESP. Selecione bases para CADESP, Veículos, Dívida Ativa, PGSF ou Arquivar Seleção; use Restaurar Seleção para devolver empresas retiradas ao grupo.
+7. Em Contabilistas, filtre os vínculos atuais ou anteriores. A pesquisa inversa usa CPF/CNPJ completo confirmado para localizar estabelecimentos associados ao profissional; confira páginas e cobertura e selecione explicitamente empresas para incluir no grupo.
+8. Em Endereços, filtre por endereço, empresa, nome ou documento e abra um endereço de origem. Use Pesquisar Endereço para revisar CEP, número, logradouro e município; preencha ao menos um critério e use Pesquisar no CADESP.
+9. Para várias origens, selecione os endereços e use Revisar seleção. Escolha Todos os dados, CEP + Número ou Logradouro + Número + Município; ajuste cada linha e use Pesquisar lote no CADESP. Depois, confira a aba Pesquisas, critérios, data, resultados e comparação com a origem. O limite é 100 endereços por lote.
+10. Em Pesquisas, use Refazer pesquisa ou Revisar e refazer pendentes depois de conferir os critérios. Marque estabelecimentos encontrados e use Incluir selecionadas no grupo; confirme e escolha se quer consultar as empresas incluídas. Use Criar ficha(s) para organizar endereços selecionados.
+11. Em Cruzamentos, filtre por tipo de comparação e ordene por ocorrências, UF, município, logradouro ou tipo. Abra cada resultado para conferir investigados, endereço e origem. Em Veículos, filtre por sócio/empresa ou busque modelo, placa ou RENAVAM; Atualizar planilha refaz o arquivo a partir dos resultados salvos.
+12. Ao abrir uma ficha, confira cabeçalho, origem, data e abas de dados, vínculos e pesquisas. Edite apenas os campos manuais disponíveis, registre etapa/prioridade/anotações e salve; use a trilha para conferir origens e consultas. Arquive/restaure fichas conforme a necessidade e exporte arquivos pela ação da ficha.
 
 Cuidados:
-- Não envie à ajuda dados das fichas, anexos ou resultados de pesquisa. O conteúdo é privado por usuário; exportações podem ser lidas por quem tiver acesso à pasta.
-- PGSF deve indicar consulta parcial, falha ou necessidade de refazer; não interprete quantidade desconhecida como zero.
-- Endereço manual pode prevalecer sobre o automático e ter data diferente da última coleta. Ausência de informação de óbito não confirma que a pessoa esteja viva.
-- Não use a ajuda para pesquisar pessoas nem para concluir responsabilidade tributária ou grupo econômico.
+- O QSA e as qualificações societárias vêm do CADESP. O NIRA não oferece ação para criar manualmente uma relação entre dois sócios nem para alterar o QSA oficial. Pesquisar documento e incluir uma empresa registra a empresa no grupo; o vínculo societário continua sendo o que o CADESP informou.
+- Pessoas fora do QSA são fichas independentes: cadastro manual não cria vínculo de sócio, representante, procurador ou parentesco. Nomes iguais não unem pessoas.
+- A pesquisa por endereço aceita CEP com oito dígitos, número inteiro positivo e logradouro/município; número com letra, faixa ou S/N não é suportado. Nos modos de lote, preencha todos os campos exigidos pelo filtro escolhido.
+- A consulta de endereço pode sinalizar paginação ou cobertura não confirmada; a lista recebida pode ser parcial. Consulte diretamente o CADESP quando o aviso indicar essa limitação.
+- Coincidência de endereço, inclusive em pesquisa CADESP ou Cruzamentos, não comprova residência, sociedade ou grupo econômico. O CEP informado pode ser apenas um filtro e não aparecer no resultado do CADESP.
+- A pesquisa inversa de contabilista não garante histórico integral de clientes. Vínculo contábil não é participação societária. Não interprete ausência de resultado sem conferir a cobertura.
+- Falha, cancelamento, consulta parcial ou resposta não reconhecida não significam resultado zero e não apagam a última consulta válida. Confira etapa, data, cobertura e pendências antes de refazer.
+- Pesquisas, notas e históricos são privados por usuário/grupo. Excluir uma pesquisa remove esse item do histórico da ficha; não apaga arquivos exportados. Exportações são legíveis: use pasta com acesso restrito.
+- Endereço manual pode prevalecer sobre o automático; confira fonte e data. Ausência de informação de óbito não confirma que a pessoa esteja viva.
 
 ## NIRA > Diligências
 
@@ -269,13 +305,15 @@ Registrar e acompanhar providências ligadas ao grupo e às fichas.
 
 Situação: Beta; acesso restrito à equipe autorizada
 
-1. Abra o grupo e registre objetivo, prioridade, prazo, responsável e origem da diligência.
-2. Atualize a situação conforme o trabalho efetivamente realizado.
-3. Ao concluir ou cancelar, informe resultado ou motivo e confira o histórico.
+1. Selecione o grupo e use Nova diligência. Ao partir de um ponto de atenção da Visão Geral, confira o vínculo e a origem sugeridos.
+2. Informe título, vínculo (grupo, empresa, pessoa ou endereço), prioridade, prazo, responsável, situação, objetivo/próximos passos e origem. Confira o registro antes de Salvar.
+3. Use os filtros Buscar, Situação, Prioridade e Prazo para localizar pendentes, abertas, em andamento, aguardando informação, concluídas ou canceladas.
+4. Ao concluir ou cancelar, informe o resultado ou motivo do encerramento e confira o histórico da diligência.
 
 Cuidados:
-- A diligência não realiza consultas externas automaticamente. Arquivamento do grupo impede alterações até sua restauração.
-- Excluir o grupo também exclui suas diligências. Não use títulos ou observações como prova sem conferir a fonte.
+- A diligência organiza uma providência; não executa consultas externas automaticamente nem confirma a conclusão de uma análise.
+- O filtro altera apenas a lista exibida. Diligências pertencem ao grupo e ao usuário identificado; grupo arquivado fica somente para leitura.
+- Excluir o grupo também exclui suas diligências. Não use título, observação ou coincidência como prova sem conferir a fonte.
 
 ## NIRA > JUCESP
 
@@ -343,15 +381,18 @@ Montar o rascunho mensal de atividades e preparar seu preenchimento no SIGET.
 
 Situação: Disponível
 
-1. Confira o mês de referência e inclua as atividades do catálogo, ajustando as quantidades. Na primeira abertura, o mês começa vazio.
-2. Se usar Importar do mês anterior, confira qual mês anterior contém atividades; substituir um mês preenchido exige confirmação.
-3. Revise o detalhamento consolidado. Para alterar a descrição de uma atividade, edite o catálogo; isso não altera cópias já incluídas no mês.
-4. Use a preparação do SIGET e aguarde o preenchimento. Na janela do SIGET, confira os dados, marque a declaração e salve ou assine pessoalmente, conforme o procedimento institucional.
+1. Confira o Mês de referência. Na primeira abertura, os meses começam vazios; o rascunho de cada mês é salvo pelo aplicativo.
+2. Em Atividades cadastradas, use Nova atividade para criar uma sugestão com atividade, tipo, detalhamento e instrução de quantidade. Use Editar atividade para ajustar ou excluir uma sugestão existente.
+3. Use Adicionar para copiar uma atividade para o mês e ajuste a quantidade no rascunho. O detalhamento total mostra o texto que será inserido no termo do SIGET.
+4. Use Importar do mês anterior para copiar as atividades do mês anterior mais recente que tenha itens. Se o mês atual já estiver preenchido, confira a confirmação antes de substituir.
+5. Use Restaurar atividades padrão para recuperar sugestões padrão excluídas. Confira mês, atividades, quantidades e detalhamento; Limpar remove apenas as atividades do mês selecionado.
+6. Use Preencher termo no SIGET e acompanhe o Andamento. No navegador aberto, confira o mês e os dados, marque a declaração e salve ou assine pessoalmente.
 
 Cuidados:
-- A ferramenta não salva nem assina automaticamente no SIGET. O mês precisa estar disponível no próprio sistema.
-- Limpar remove as atividades somente do mês selecionado. Confira o mês antes de confirmar.
-- Atividades sem opção específica no SIGET podem ser agrupadas em Outros; confira o detalhamento final antes de salvar.
+- A ferramenta prepara e preenche o SIGET, mas não salva nem assina o termo. Essas ações são feitas por você no próprio sistema.
+- A atividade do catálogo é copiada para o mês. Editar o catálogo não modifica cópias já adicionadas.
+- Atividades sem opção específica no SIGET podem ser agrupadas em Outros. Confira o detalhamento final e se o mês está disponível no sistema antes de salvar.
+- Importar e Limpar atuam no mês selecionado. Confira a referência antes de confirmar.
 
 ## Configurações
 
@@ -359,12 +400,15 @@ Conferir identificação, equipe, armazenamento, relatórios e atualizações.
 
 Situação: Disponível
 
-1. Confira Nome e Login preenchidos pela identificação. Se houver mais de uma equipe permitida, selecione a equipe adequada e salve.
-2. Escolha uma pasta restrita para os arquivos e preencha as informações de usuário necessárias às funções utilizadas. Nunca forneça essas credenciais à ajuda.
-3. Em Relatórios, configure os IDs antes de baixar pesquisas. Quando uma versão de relatório mudar e o ID for esvaziado, use Configurar IDs novamente.
-4. Em Atualizações, confira a versão instalada e procure atualizações. Aguarde o download e reinicie quando solicitado, depois de terminar as operações.
+1. Na aba Usuário, confira Nome completo e Login preenchidos pela identificação. Selecione uma equipe permitida e o tratamento de identificação usado nos documentos.
+2. Preencha UA e Usuário SEI conforme a orientação exibida na própria tela. Informe o Token SEI no campo próprio ou use Tentar obter o token SEI automaticamente.
+3. Em Armazenamento, selecione a pasta-base onde o aplicativo organiza subpastas por contribuinte. Salve as alterações das abas Usuário e Relatórios pelo botão Salvar.
+4. Na aba Relatórios, confira os IDs do Launchpad da Base da notificação, CQ Levantamento, CQ Acompanhado, DARE da Nota a Nota e Qtde Docs Fiscais Emitidos. Marque os relatórios desejados em Configurar IDs dos relatórios automaticamente e use Configurar IDs; depois confira os valores preenchidos.
+5. Na configuração de Notificação inicial, revise os limites dos parágrafos opcionais 6, 9 e 10, se aplicável. Em Atualizações, confira as versões do aplicativo e instalador, use Procurar atualizações e, se houver, Atualizar. Acompanhe o progresso; use Cancelar download ou Abrir registro quando necessário.
 
 Cuidados:
-- Salve as alterações e confira os avisos de validação. Salvar dados parciais não torna disponíveis funções que ainda dependem de informação obrigatória.
-- Token SEI é uma credencial: preencha somente no campo próprio do aplicativo, nunca na ajuda.
-- Uma pasta compartilhada pode expor documentos exportados. Não altere regras de acesso nem compartilhe configurações de outro usuário.
+- Nome e Login vêm da identificação e são somente leitura. Equipes disponíveis dependem da autorização; escolha apenas uma equipe permitida.
+- Token SEI é credencial: preencha somente no campo próprio ou use a rotina automática; nunca envie à ajuda.
+- IDs são necessários às pesquisas que os usam. Se um ID for esvaziado após uma troca de relatório, configure-o novamente antes de baixar.
+- Uma pasta compartilhada pode expor documentos exportados. Escolha um local com acesso restrito e não altere dados de outro usuário.
+- Reinicie para aplicar a atualização quando o aplicativo solicitar e depois que as operações em curso terminarem.
