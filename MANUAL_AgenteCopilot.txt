@@ -1,0 +1,370 @@
+# Manual de Uso da Ferramenta
+
+Versão do aplicativo: 2026-10-26
+Edição: Desenvolvimento, não destinada à produção.
+
+Consulte sempre a edição mais atual compatível com a versão em uso. Se a versão ou a função não corresponder à sua tela, não execute a ação com base nesta orientação.
+
+## Antes de Começar
+
+- Este manual explica o uso do aplicativo. Não autoriza medidas fiscais nem substitui normas, análise profissional ou confirmação do responsável.
+- Para consultar a ajuda, use o ícone de interrogação no cabeçalho. O painel permite buscar e abrir assuntos do manual sem sair da tarefa. Feche pelo botão Fechar ajuda, pela tecla Esc ou pela área escurecida; a tela anterior é restaurada. A conversa com o agente permanece indisponível enquanto ele não estiver configurado.
+- Use Windows, rede institucional ou VPN e certificado digital válido conectado. Para conversão de documentos, mantenha o Microsoft Word instalado. Algumas funções abrem o navegador.
+- O acesso normal exige identificação na abertura. Informe o PIN somente na janela segura do certificado, nunca em uma conversa de ajuda. Se a identificação falhar, use Tentar de novo ou cancele a abertura.
+- Confirme sua equipe e a pasta de arquivos em Configurações. Nome e login são preenchidos pela identificação. Funções restritas só aparecem para usuários autorizados.
+- Antes de usar funções de um contribuinte, carregue e confira os dados em Dados do contribuinte. Confira também o período de cada consulta; ele pode ser diferente do período de um gráfico ou documento.
+- As pastas dos arquivos são organizadas por contribuinte e tipo de documento. Confira o caminho informado ao terminar. Quando houver conflito, criar nova versão preserva o anterior; substituir exige cuidado.
+- Enviar DEC, registrar no PGDT, iniciar ou encerrar acompanhamento e criar processo SEI podem alterar sistemas reais. Leia a confirmação e confira contribuinte, destinatários, texto e anexos antes de prosseguir.
+- Cancelar pode esperar o término da etapa atual e não desfaz operações já confirmadas. Se o resultado de uma escrita for incerto, confira no sistema de destino antes de repetir para evitar duplicidade.
+- A ajuda é somente orientativa: não executa tarefas, não vê sua tela ou arquivos e não consulta dados reais. Informe apenas o nome da tela, a etapa e uma mensagem de erro sem dados pessoais.
+- Não envie à ajuda nomes ou documentos de contribuintes, CPFs, CNPJs reais, dados fiscais, senhas, PINs, tokens, anexos, capturas de tela ou registros completos. Não solicite informações de outro usuário.
+- Se a tela não corresponder ao manual, confira a versão do aplicativo. Sem orientação documentada, interrompa a ação de risco e peça orientação ao responsável, sem transmitir dados sigilosos pela conversa.
+- O aplicativo procura atualizações. O download pode ocorrer em segundo plano; reinicie quando solicitado e quando as operações em curso terminarem. Em Configurações > Atualizações, é possível procurar e baixar atualizações manualmente.
+
+## Dados do contribuinte
+
+Carregar o contribuinte no CADESP e definir a empresa usada nas demais funções.
+
+Situação: Disponível
+
+1. Informe o CNPJ base de oito dígitos e carregue os dados.
+2. Confira nome, matriz, estabelecimentos e situação cadastral antes de continuar.
+3. Para trabalhar com outra empresa, desvincule ou carregue o outro contribuinte e confira novamente.
+
+Cuidados:
+- O contribuinte vinculado determina os destinatários e arquivos de várias ações. Não use apenas o número digitado em outra tela como confirmação.
+- Falha na consulta não confirma inexistência do contribuinte nem substitui uma pesquisa cadastral válida.
+
+## Início de acompanhamento > Atribuir empresa
+
+Abrir a ferramenta institucional de atribuição de empresas dentro do aplicativo.
+
+Situação: Disponível como página institucional
+
+1. Abra Atribuir empresa e aguarde a ferramenta institucional carregar.
+2. Confira os dados e as confirmações apresentados pela própria ferramenta.
+
+Cuidados:
+- Este manual não descreve as regras internas da ferramenta de atribuição. Não presuma que abrir a página realiza uma atribuição.
+- Se a autenticação ou o carregamento falhar, confira a rede e sua autorização.
+
+## Início de acompanhamento > Acompanhar (PGDT)
+
+Listar os próprios acompanhamentos e iniciar o acompanhamento do contribuinte vinculado.
+
+Situação: Disponível
+
+1. Confira o contribuinte vinculado e use Listar acompanhados para consultar seus acompanhamentos.
+2. Para iniciar, confira a confirmação apresentada antes de autorizar a gravação no PGDT.
+3. Confira o retorno e, se necessário, a situação no PGDT.
+
+Cuidados:
+- Iniciar acompanhamento grava no PGDT. A ferramenta recusa contribuinte que já esteja entre seus acompanhados.
+- Não repita uma operação com resultado incerto sem conferir o PGDT. A ajuda não altera o responsável nem autoriza acompanhamento de outra equipe.
+
+## Início de acompanhamento > Notificação inicial
+
+Baixar pesquisas, preparar a notificação inicial e conduzir seu envio e registro.
+
+Situação: Disponível
+
+1. Em Baixar pesquisas, confira o contribuinte, o período inicial e final em mês/ano e as pesquisas marcadas. Configure os relatórios necessários antes da primeira consulta.
+2. Execute a consulta e acompanhe o Andamento. Se houver sucesso parcial, use Resolver pendências depois de conferir o que faltou.
+3. Em Preparar notificação, confira o início da inadimplência e os períodos dos três gráficos. Por padrão, os dados mais recentes disponíveis são usados; a seleção manual exige carregar os arquivos escolhidos.
+4. Confira as decisões sobre parágrafos opcionais e avisos de dados ausentes, gere o documento e revise-o antes de converter em PDF ou assinar. Campos pendentes e trechos de decisão exigem revisão humana.
+5. Em Envio da notificação, confira mensagem e PDF. Apenas preparar rascunho DEC não envia; Enviar DEC exige confirmação e envia uma nova mensagem.
+6. Em Registro no PGDT, confira tipo, relato, notificação e comprovante do DEC, quando aplicável, antes de confirmar. Confira separadamente o retorno de envio e o de registro.
+
+Cuidados:
+- Alterar o período dos gráficos não baixa pesquisas novas. Confira a atualidade dos dados e a compatibilidade com o documento.
+- O documento aberto para edição precisa estar fechado e sincronizado antes da conversão em PDF.
+- Sem confirmação do envio, confira Consultar mensagens no DEC antes de repetir. Registro no PGDT pode ter sido gravado mesmo se um anexo falhou depois.
+- A assinatura do PDF pode pedir seu próprio PIN. Confira assinaturas em leitor adequado; um aviso do visualizador não prova sozinho que a assinatura seja inválida.
+
+## Início de acompanhamento > Criar processo SEI
+
+Preparar documentos e criar o processo SEI para o contribuinte vinculado.
+
+Situação: Disponível
+
+1. Em Documentos para inclusão, confira o contribuinte e escolha os documentos, o modo do CADESP e os arquivos manuais necessários.
+2. Confira os documentos reaproveitados e, quando solicitado, escolha entre baixar novamente ou usar os disponíveis. Confira o período dos débitos.
+3. Na aba Criar processo SEI, revise os dados do processo, assunto, especificação, interessado e anexos antes de executar a criação.
+4. Confira o resultado e os documentos efetivamente incluídos.
+
+Cuidados:
+- Criar o processo altera o SEI. Abrir a tela ou preparar documentos não equivale a criar o processo.
+- Confira PDFs de notificação e DEC escolhidos manualmente. Não presuma que um comprovante de outra mensagem corresponda ao envio atual.
+
+## Início de acompanhamento > Reunião inicial
+
+Área reservada para reunião inicial.
+
+Situação: Em construção nesta edição
+
+1. A página informa Em construção; não há fluxo operacional documentado disponível nela.
+
+Cuidados:
+- Não presuma que a página agenda reuniões ou produz atas.
+
+## Acompanhamento > Acompanhamento mensal
+
+Preparar ou enviar mensagem pelo DEC e registrar o acionamento no PGDT.
+
+Situação: Disponível
+
+1. Confira o contribuinte e marque os estabelecimentos destinatários. Revise complemento, classificação, texto e anexos.
+2. Use o modelo apropriado e confira o texto final. Ao selecionar anexos, corrija nomes recusados; nomes com parênteses não são aceitos.
+3. Escolha preparar rascunhos ou enviar. Rascunho não envia; o envio pede confirmação e pode concluir alguns destinatários e falhar em outros.
+4. Confira o resultado por destinatário e os PDFs dos DEC enviados. Resolver pendências repete somente as pendências oferecidas.
+5. Para registrar no PGDT, confira o tipo de acionamento, o relato e os anexos. Se o envio ocorreu mas o PDF não foi baixado, obtenha o comprovante e escolha-o manualmente.
+
+Cuidados:
+- Confira mensagens no DEC antes de repetir qualquer envio incerto. Cancelar não desfaz um envio já feito.
+- Trocar o texto ou modelo depois do envio não muda a mensagem enviada. O registro automático deve refletir o que realmente saiu no DEC.
+- Acompanhamento mensal e Notificação final mantêm textos e seleções separados. Aguarde uma operação terminar antes de alternar entre elas.
+
+## Regimes Especiais de Ofício > Nota a Nota
+
+Baixar pesquisas do contribuinte e preparar a análise Nota a Nota.
+
+Situação: Disponível
+
+1. Confira o contribuinte vinculado e as datas inicial e final solicitadas na tela, no formato ano, mês e dia.
+2. Selecione as pesquisas necessárias e execute. O período inicial sugerido corresponde ao mês anterior completo.
+3. Confira o resultado de cada pesquisa no Andamento e os arquivos separados por período. A análise depende de NFe e DAREs concluídas com sucesso na mesma execução.
+
+Cuidados:
+- Download parcial não significa análise completa. Confira falhas e avisos antes de utilizar os resultados.
+- A existência de relatórios de rodadas diferentes não substitui os requisitos da análise da execução atual.
+
+## Regimes Especiais de Ofício > Controle de emissão
+
+Consultar as quantidades de documentos fiscais eletrônicos emitidos no período.
+
+Situação: Disponível
+
+1. Confira o contribuinte e o período em mês/ano.
+2. Baixe a pesquisa e consulte as tabelas RESUMO, CNPJ BASE e Por CNPJ.
+3. Use a rolagem horizontal quando necessário e confira os cabeçalhos antes de comparar valores.
+
+Cuidados:
+- Configure o relatório correspondente antes de consultar. Célula vazia ou ausência de identificação no relatório não deve ser interpretada automaticamente como zero ou inexistência de emissão.
+
+## Outras medidas restritivas > Parcelamento com garantia
+
+Abrir o agente institucional de análise de garantias em ambiente Microsoft 365.
+
+Situação: Disponível como agente separado
+
+1. Abra Parcelamento com garantia e aguarde o agente institucional carregar.
+2. Confira a identificação do agente e siga suas orientações dentro das regras institucionais.
+
+Cuidados:
+- O agente de ajuda de uso não substitui o agente de garantias e não avalia garantias ou casos fiscais.
+- O acesso a uma conversa não realiza atos no aplicativo nem confirma uma decisão administrativa. Não envie dados sigilosos sem autorização institucional específica.
+
+## Encerramento > Reunião de encerramento
+
+Área reservada para reunião de encerramento.
+
+Situação: Em construção nesta edição
+
+1. A página informa Em construção; não há fluxo operacional documentado disponível nela.
+
+Cuidados:
+- Não presuma que abrir a página encerra um acompanhamento ou agenda reunião.
+
+## Encerramento > Notificação final
+
+Preparar ou enviar a notificação de encerramento pelo DEC e registrar o acionamento.
+
+Situação: Disponível
+
+1. Confira o contribuinte, destinatários e o modelo de Notificação de Encerramento de Acompanhamento.
+2. Revise complemento, texto, classificação e anexos. Escolha rascunho ou envio e confira a confirmação antes de enviar.
+3. Confira o retorno por destinatário e o PDF da mensagem enviada.
+4. Se registrar no PGDT, confira o tipo Encerramento do Acompanhamento, relato e anexos antes de confirmar.
+
+Cuidados:
+- Enviar a notificação final não equivale a encerrar o acompanhamento no PGDT. Essa é uma ação separada.
+- Valem os mesmos cuidados do Acompanhamento mensal: não repetir envio incerto, conferir anexos e respeitar os destinatários de cada rodada.
+
+## Encerramento > Encerrar (PGDT)
+
+Encerrar no PGDT um acompanhamento próprio e aberto.
+
+Situação: Disponível; exige conferência do resultado no PGDT
+
+1. Confira o contribuinte vinculado e consulte os acompanhamentos.
+2. Confirme que o acompanhamento é seu e está aberto. Leia a confirmação antes de usar Encerrar acompanhamento.
+3. Confira o retorno e o estado final no PGDT.
+
+Cuidados:
+- O encerramento altera o PGDT e não é desfeito por Cancelar. Não encerra nem arquiva automaticamente um processo SEI.
+- Se o PGDT recusar ou não confirmar o resultado, confira a situação antes de repetir. A ajuda não fornece justificativa nem autoriza encerramento de acompanhamento de outra pessoa.
+
+## Encerramento > Arquivamento SEI
+
+Área reservada para arquivamento no SEI.
+
+Situação: Em construção nesta edição
+
+1. A página informa Em construção; não há fluxo operacional documentado disponível nela.
+
+Cuidados:
+- Encerrar um acompanhamento no PGDT não arquiva um processo SEI por esta página.
+
+## NIRA > Grupos
+
+Organizar grupos e abrir o trabalho cadastral e de pesquisa do Recon.
+
+Situação: Beta; acesso restrito à equipe autorizada
+
+1. Escolha um grupo existente ou crie Novo grupo, usando CNPJs-base ou OSFs conforme a opção da tela.
+2. Confira as empresas resolvidas antes de continuar. Novo grupo pode iniciar consultas cadastrais; abrir um grupo existente usa os dados salvos, sem refazer as pesquisas.
+3. Ao arquivar, confira a seleção. Um grupo arquivado permanece para consulta e precisa ser restaurado antes de alterações.
+
+Cuidados:
+- Os grupos pertencem ao usuário identificado. Não use a ajuda para pedir conteúdo de grupos de outra pessoa.
+- A ferramenta organiza informações; vínculos e coincidências isolados não comprovam grupo econômico.
+
+## NIRA > Visão Geral
+
+Acompanhar a cobertura das pesquisas salvas, o checklist e diferenças entre coletas.
+
+Situação: Beta; Mudanças entre coletas é provisório nesta edição
+
+1. Abra um grupo e confira o resumo, as fontes, datas e pendências das pesquisas.
+2. No Checklist de análises, selecione a ficha investigada e registre situação, observação e justificativa quando necessário. Desmarcar uma ficha não apaga seu preenchimento.
+3. Compare coletas disponíveis da mesma empresa e confira a cobertura antes de interpretar diferenças. Revise humanamente as mudanças indicadas e registre o que foi conferido.
+4. Crie diligências vinculadas quando houver providência a acompanhar.
+
+Cuidados:
+- Pesquisa não consultada, parcial ou com falha não significa resultado negativo. Evidências salvas não concluem automaticamente o checklist.
+- A ausência em coleta parcial não comprova saída de sócio, encerramento de vínculo ou data de alteração. Endereços coincidentes não comprovam ocupação simultânea.
+- Coletas antigas não se atualizam apenas por abrir a tela. Repita explicitamente as pesquisas necessárias.
+
+## NIRA > Recon
+
+Consultar e organizar empresas, pessoas, contabilistas, endereços e históricos do grupo.
+
+Situação: Beta; acesso restrito à equipe autorizada
+
+1. Abra um grupo e confira as empresas e fichas selecionadas antes de consultar CADESP, veículos, Dívida Ativa, PGSF ou Smart-Sefaz.
+2. Escolha explicitamente cada consulta e acompanhe o resultado e sua data. Abrir uma ficha não realiza consulta nova.
+3. Nas fichas, confira a origem de endereços, contatos e vínculos. Edite somente as informações manuais pretendidas; elas não alteram o cadastro de origem.
+4. Na pesquisa de contabilista, confira o documento e a cobertura dos resultados antes de selecionar empresas para inclusão. Vínculo contábil não equivale a vínculo societário.
+5. Ao exportar fichas ou documentos, escolha uma pasta com acesso restrito.
+
+Cuidados:
+- Não envie à ajuda dados das fichas, anexos ou resultados de pesquisa. O conteúdo é privado por usuário; exportações podem ser lidas por quem tiver acesso à pasta.
+- PGSF deve indicar consulta parcial, falha ou necessidade de refazer; não interprete quantidade desconhecida como zero.
+- Endereço manual pode prevalecer sobre o automático e ter data diferente da última coleta. Ausência de informação de óbito não confirma que a pessoa esteja viva.
+- Não use a ajuda para pesquisar pessoas nem para concluir responsabilidade tributária ou grupo econômico.
+
+## NIRA > Diligências
+
+Registrar e acompanhar providências ligadas ao grupo e às fichas.
+
+Situação: Beta; acesso restrito à equipe autorizada
+
+1. Abra o grupo e registre objetivo, prioridade, prazo, responsável e origem da diligência.
+2. Atualize a situação conforme o trabalho efetivamente realizado.
+3. Ao concluir ou cancelar, informe resultado ou motivo e confira o histórico.
+
+Cuidados:
+- A diligência não realiza consultas externas automaticamente. Arquivamento do grupo impede alterações até sua restauração.
+- Excluir o grupo também exclui suas diligências. Não use títulos ou observações como prova sem conferir a fonte.
+
+## NIRA > JUCESP
+
+Área reservada para JUCESP.
+
+Situação: Em construção nesta edição
+
+1. A página informa Em construção; não há consulta automatizada disponível por ela nesta edição.
+
+Cuidados:
+- Marcar uma consulta no checklist não significa que ela foi executada por esta página.
+
+## Ferramentas > Baixador Conta Fiscal ICMS
+
+Área reservada para o baixador avulso da Conta Fiscal.
+
+Situação: Em construção nesta edição
+
+1. A página avulsa informa Em construção.
+2. Para as pesquisas já disponíveis, consulte Notificação inicial > Baixar pesquisas e as opções de Débitos Declarados Não Inscritos.
+
+Cuidados:
+- Não confunda a página avulsa em construção com as pesquisas complementares já disponíveis na Notificação inicial.
+
+## Ferramentas > Webmail (Outlook)
+
+Abrir o Outlook institucional dentro do aplicativo.
+
+Situação: Disponível como página institucional
+
+1. Abra Webmail e aguarde a caixa institucional carregar.
+2. Confira a conta e os destinatários antes de enviar qualquer mensagem no Outlook.
+
+Cuidados:
+- A ajuda de uso não lê e-mails nem deve receber cópias de mensagens institucionais.
+- Ações realizadas no Outlook são independentes do envio DEC.
+
+## Recursos Humanos > Folha de ponto
+
+Abrir a planilha institucional da equipe selecionada.
+
+Situação: Disponível como página institucional
+
+1. Confira a equipe salva em Configurações.
+2. Abra Folha de ponto e aguarde a planilha correspondente carregar. Se não houver equipe válida, corrija a seleção permitida antes de repetir.
+
+Cuidados:
+- Não escolha equipe diferente da sua autorização. A ajuda não altera a planilha nem interpreta regras de frequência não descritas neste manual.
+
+## Recursos Humanos > Planilha de Férias
+
+Abrir a planilha institucional de férias.
+
+Situação: Disponível como página institucional
+
+1. Abra Planilha de Férias e aguarde o carregamento.
+2. Confira as informações e permissões na própria planilha antes de editar.
+
+Cuidados:
+- A ajuda não consulta férias individuais nem autoriza alterações. Não envie informações funcionais de colegas para a conversa.
+
+## Recursos Humanos > Teletrabalho
+
+Montar o rascunho mensal de atividades e preparar seu preenchimento no SIGET.
+
+Situação: Disponível
+
+1. Confira o mês de referência e inclua as atividades do catálogo, ajustando as quantidades. Na primeira abertura, o mês começa vazio.
+2. Se usar Importar do mês anterior, confira qual mês anterior contém atividades; substituir um mês preenchido exige confirmação.
+3. Revise o detalhamento consolidado. Para alterar a descrição de uma atividade, edite o catálogo; isso não altera cópias já incluídas no mês.
+4. Use a preparação do SIGET e aguarde o preenchimento. Na janela do SIGET, confira os dados, marque a declaração e salve ou assine pessoalmente, conforme o procedimento institucional.
+
+Cuidados:
+- A ferramenta não salva nem assina automaticamente no SIGET. O mês precisa estar disponível no próprio sistema.
+- Limpar remove as atividades somente do mês selecionado. Confira o mês antes de confirmar.
+- Atividades sem opção específica no SIGET podem ser agrupadas em Outros; confira o detalhamento final antes de salvar.
+
+## Configurações
+
+Conferir identificação, equipe, armazenamento, relatórios e atualizações.
+
+Situação: Disponível
+
+1. Confira Nome e Login preenchidos pela identificação. Se houver mais de uma equipe permitida, selecione a equipe adequada e salve.
+2. Escolha uma pasta restrita para os arquivos e preencha as informações de usuário necessárias às funções utilizadas. Nunca forneça essas credenciais à ajuda.
+3. Em Relatórios, configure os IDs antes de baixar pesquisas. Quando uma versão de relatório mudar e o ID for esvaziado, use Configurar IDs novamente.
+4. Em Atualizações, confira a versão instalada e procure atualizações. Aguarde o download e reinicie quando solicitado, depois de terminar as operações.
+
+Cuidados:
+- Salve as alterações e confira os avisos de validação. Salvar dados parciais não torna disponíveis funções que ainda dependem de informação obrigatória.
+- Token SEI é uma credencial: preencha somente no campo próprio do aplicativo, nunca na ajuda.
+- Uma pasta compartilhada pode expor documentos exportados. Não altere regras de acesso nem compartilhe configurações de outro usuário.
