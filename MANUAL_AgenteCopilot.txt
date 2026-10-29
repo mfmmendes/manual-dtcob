@@ -1,6 +1,6 @@
 # Manual de Uso da Ferramenta
 
-Versão do aplicativo: 2026-10-26
+Versão do aplicativo: 2026-10-29
 Edição: Desenvolvimento, não destinada à produção.
 
 Consulte sempre a edição mais atual compatível com a versão em uso. Se a versão ou a função não corresponder à sua tela, não execute a ação com base nesta orientação.
@@ -8,102 +8,112 @@ Consulte sempre a edição mais atual compatível com a versão em uso. Se a ver
 ## Antes de Começar
 
 - Este manual explica o uso do aplicativo. Não autoriza medidas fiscais nem substitui normas, análise profissional ou confirmação do responsável.
-- Para consultar a ajuda, use o ícone de interrogação no cabeçalho. O painel permite buscar e abrir assuntos do manual sem sair da tarefa. Feche pelo botão Fechar ajuda, pela tecla Esc ou pela área escurecida; a tela anterior é restaurada. A conversa com o agente permanece indisponível enquanto ele não estiver configurado.
-- Use Windows, rede institucional ou VPN e certificado digital válido conectado. Para conversão de documentos, mantenha o Microsoft Word instalado. Algumas funções abrem o navegador.
-- O acesso normal exige identificação na abertura. Informe o PIN somente na janela segura do certificado, nunca em uma conversa de ajuda. Se a identificação falhar, use Tentar de novo ou cancele a abertura.
-- Confirme sua equipe e a pasta de arquivos em Configurações. Nome e login são preenchidos pela identificação. Funções restritas só aparecem para usuários autorizados.
-- Antes de usar funções de um contribuinte, carregue e confira os dados em Dados do contribuinte. Confira também o período de cada consulta; ele pode ser diferente do período de um gráfico ou documento.
-- As pastas dos arquivos são organizadas por contribuinte e tipo de documento. Confira o caminho informado ao terminar. Quando houver conflito, criar nova versão preserva o anterior; substituir exige cuidado.
-- Enviar DEC, registrar no PGDT, iniciar ou encerrar acompanhamento e criar processo SEI podem alterar sistemas reais. Leia a confirmação e confira contribuinte, destinatários, texto e anexos antes de prosseguir.
+- Requisitos: Windows 10 ou 11, rede da Sefaz ou VPN, certificado digital ICP-Brasil (token ou cartão) conectado e o PIN em mãos, e Microsoft Word instalado para gerar PDFs. Sem rede, o aplicativo abre, mas as consultas e a atualização automática não funcionam. No Windows 10, se a janela não abrir, peça à TI o componente de execução do Microsoft Edge.
+- Para abrir, use o atalho Delegacia Tributária de Cobrança. O Windows pede o PIN do certificado; com ele o aplicativo confirma quem você é e preenche Nome e Login em Configurações. O mesmo PIN vale para as demais funções enquanto o aplicativo estiver aberto; a assinatura de PDF tem a própria janela de PIN. Se a identificação falhar, a janela do Windows oferece Repetir ou Cancelar; fora da rede, conecte a VPN e clique em Repetir.
+- O acesso é liberado a quem faz parte da unidade de Cobrança Qualificada no Controle Hierárquico. Sem acesso, o aplicativo avisa para procurar o superior hierárquico e fecha. A equipe vem do Controle Hierárquico: quem tem mais de uma escolhe em Configurações. Funções restritas, como NIRA e Gestão, só aparecem para usuários autorizados. Cada usuário tem as próprias configurações e dados salvos.
+- Na faixa superior ficam o contribuinte vinculado (CNPJ base e nome, com o X para desvincular), o botão de Ajuda, o Chat do Teams, as Notificações (sino), o Zoom e a Tela cheia. A versão em uso aparece no fim do menu lateral; clique nela para ver as Novidades.
+- O botão de Ajuda (círculo com ponto de interrogação, na faixa superior) oferece: Ajuda, que abre o agente de ajuda no painel lateral (com Abrir a Ajuda no navegador, Recolher e Fechar a Ajuda); Manual de uso, que abre este manual com busca e o botão Conversar com a Ajuda DTCob; Relatar um problema; Sugerir uma melhoria; Enviar um comentário; Meus relatos; e Novidades da versão.
+- Para relatar, escolha Problema, Sugestão ou Outro, descreva o caso e use Enviar (ou Ctrl+Enter); Ctrl+V cola até 4 prints. Junto vão automaticamente a cópia da página aberta com os valores dos campos (o Token SEI vai mascarado), o andamento das telas, o contribuinte vinculado, a versão, seu nome, login e equipe, o computador e trechos dos registros de atualização, cifrados para a equipe de desenvolvimento. Mensagens de erro em vermelho têm o botão Relatar. Se o envio falhar, o texto continua no formulário.
+- Em Meus relatos você vê seus relatos, a situação e o histórico, e usa Responder para falar com a equipe; as respostas chegam pela central de notificações. Quando a equipe enviar uma correção, Instalar versão de teste aparece na notificação e em Meus relatos (só no aplicativo instalado). Depois, a faixa Versão de teste oferece Funcionou, Não funcionou e Voltar à versão oficial, que fecha e reabre o aplicativo.
+- Notificações (sino): o número vermelho conta as novas. Use Filtrar e agrupar, Dispensar todas (vão para o histórico), Personalizar (prazos e tempo do aviso) e Histórico, com Devolver à central e Limpar histórico. O X de um aviso no canto só fecha o aviso; a notificação continua na central.
+- Chat do Teams: o botão da faixa abre o Teams no painel lateral. Recolher mantém o Teams carregado; Fechar o Teams libera memória; a engrenagem define se o painel fica por cima ou empurra a página e quando fechar sozinho. Teams, Ajuda e notificações dividem o mesmo painel lateral: abrir um recolhe o outro.
+- Antes de usar funções de um contribuinte, confira o contribuinte vinculado na faixa superior e no Painel de acompanhamento > Visão geral. Confira também o período de cada consulta; ele pode ser diferente do período de um gráfico ou documento.
+- Os arquivos ficam na pasta padrão escolhida em Configurações, numa pasta por contribuinte (CNPJ base e nome), separados por origem: Cadesp, Nos Conformes, Conta Fiscal, Dívida Ativa, Launchpad, Notificações, DEC, SEI, Nota a Nota, DARE, E-mail e Controle de Emissão. Confira o caminho informado ao terminar. Quando o arquivo já existe, criar nova versão (v.2, v.3) preserva o anterior; substituir exige cuidado. Senhas e PIN nunca são gravados.
+- Enviar DEC, enviar e-mail, registrar no PGDT, iniciar ou encerrar acompanhamento, atribuir empresa e criar processo SEI alteram sistemas reais. Leia a confirmação, quando houver, e confira contribuinte, destinatários, texto e anexos antes de prosseguir.
 - Cancelar pode esperar o término da etapa atual e não desfaz operações já confirmadas. Se o resultado de uma escrita for incerto, confira no sistema de destino antes de repetir para evitar duplicidade.
-- A ajuda é somente orientativa: não executa tarefas, não vê sua tela ou arquivos e não consulta dados reais. Informe apenas o nome da tela, a etapa e uma mensagem de erro sem dados pessoais.
-- Não envie à ajuda nomes ou documentos de contribuintes, CPFs, CNPJs reais, dados fiscais, senhas, PINs, tokens, anexos, capturas de tela ou registros completos. Não solicite informações de outro usuário.
+- O manual e o agente de ajuda são somente orientativos: não executam tarefas, não veem sua tela ou arquivos e não consultam dados reais. Informe apenas o nome da tela, a etapa e uma mensagem de erro sem dados pessoais.
+- Não envie ao agente de ajuda nomes ou documentos de contribuintes, CPFs, CNPJs reais, dados fiscais, senhas, PINs, tokens, anexos, capturas de tela ou registros completos. Não solicite informações de outro usuário.
 - Se a tela não corresponder ao manual, confira a versão do aplicativo. Sem orientação documentada, interrompa a ação de risco e peça orientação ao responsável, sem transmitir dados sigilosos pela conversa.
-- O aplicativo procura atualizações. O download pode ocorrer em segundo plano; reinicie quando solicitado e quando as operações em curso terminarem. Em Configurações > Atualizações, é possível procurar e baixar atualizações manualmente.
+- Atualização: ao abrir, o aplicativo confere se há versão nova e pode baixá-la em segundo plano. Quando terminar, escolha Reiniciar agora ou Depois (aplica na próxima abertura), depois que as operações em curso terminarem. Se uma atualização não puder ser instalada, o aplicativo avisa a cada abertura; use Configurações > Atualizações > Atualizar. Se ainda falhar, use Abrir registro e envie ao suporte os registros de atualização e do instalador.
+- Instalação: o instalador não tem assinatura de editor, por isso o Windows pode mostrar Editor desconhecido. Para conferir o arquivo (opcional), abra o PowerShell na pasta do instalador e rode Get-FileHash .\DTCob_Instalador.exe -Algorithm SHA256; o código precisa ser igual ao sha256 do DTCob_Instalador.json publicado ao lado. Se for diferente, não instale e avise a equipe de desenvolvimento.
+- Não mova o DTCob.exe para fora da pasta de instalação nem apague as pastas que ficam ao lado dele. Se o ícone não abrir ou o aplicativo se disser incompleto, instale de novo pelo instalador da biblioteca DTCob.
+- Problemas comuns: se a janela do PIN não aparecer, aguarde e confira se o token está conectado. Acesso negado ou erro de rede: confirme a rede da Sefaz ou a VPN. Erro de certificado: o aplicativo exige exatamente um certificado ICP-Brasil válido instalado no Windows.
 
-## Dados do contribuinte
+## Painel de acompanhamento
 
-Carregar o contribuinte no CADESP e definir a empresa usada nas demais funções.
+Acompanhar a carteira do Plano de Trabalho 2026 e consultar, em abas, os dados do contribuinte vinculado (CADESP e Base do contribuinte).
 
-Situação: Disponível
+Situação: Disponível; sem carteira acompanhada ou sem o Plano liberado, a carteira mostra empresas fictícias de exemplo
 
-1. Informe o CNPJ base com oito dígitos e use Carregar contribuinte.
-2. Acompanhe o Andamento e confira nome empresarial, matriz, IE, atividade, capital social, estabelecimentos e situação retornados pelo CADESP.
-3. Confirme o indicador de contribuinte vinculado antes de usar páginas que dependem dessa empresa.
-4. Limpar campos remove o texto digitado, mas não desvincula o contribuinte carregado. Para trocar de empresa, carregue outra ou use a ação de desvincular disponível no fluxo da Notificação Inicial; depois confira novamente os dados.
-
-Cuidados:
-- O contribuinte vinculado determina destinatários, documentos e caminhos de arquivos em várias ações. Não use apenas o número digitado em outra tela como confirmação.
-- Falha na consulta não confirma inexistência do contribuinte nem substitui uma pesquisa cadastral válida.
-- Ao trocar ou desvincular, confirme que as páginas seguintes exibem a empresa esperada antes de iniciar uma operação que grava dados.
-
-## Início de acompanhamento > Atribuir empresa
-
-Abrir a ferramenta institucional de atribuição de empresas dentro do aplicativo.
-
-Situação: Disponível como página institucional
-
-1. Abra Atribuir empresa e aguarde a ferramenta institucional carregar.
-2. Confira os dados e as confirmações apresentados pela própria ferramenta.
+1. Abra Painel de acompanhamento. A aba Plano de Trabalho 2026 mostra os indicadores Carteira, Acompanhamentos novos, Prazo vencido, Pendências em aberto e Acordos descumpridos, a data da última atualização e o cartão Carteira. As abas Visão geral, GIAs, Débitos, Inadimplência, Parcelamentos, Faturamento, Clientes e Fornecedores mostram o contribuinte vinculado.
+2. No cartão Carteira, use Atualizar para ler a carteira no PGDT e baixar a Base de cada empresa em segundo plano; acompanhe o progresso e o Andamento no fim da página. Escolha Tabela ou Gráfico. Em Tabela, Visualização oferece Padrão, Alternativa, Personalizada e Personalizar colunas; em Gráfico, Exibição define o horizonte de 12, 18 ou 24 meses. Mostrar encerrados aparece quando há empresas encerradas.
+3. Em cada linha, Vincular carrega o CADESP e a Base da empresa e abre a Visão geral; o ícone da próxima ação indica o passo recomendado. O menu de mais ações traz Notificar (abre o Acompanhamento mensal com as pendências já marcadas), Lançar/editar acordo, Atualizar este, Abrir no PGDT, Abrir pasta, as medidas restritivas (REO Nota a Nota, Controle de emissão, Parcelamento com garantia), Encerrar (Notificação final ou Encerrar (PGDT), quando houver hipótese de encerramento) e Anotação.
+4. Clique no nome da empresa para abrir o detalhe, com as abas Resumo (Situação geral, O que o plano diz agora, Próximo marco, Acordo, Pendências e Valores e fatos), Linha do tempo (Período e Fases na barra ou no fundo; clique num mês para ver o Detalhe do mês), Acordo, Parcelamentos, Prazos e medidas, Alertas, Histórico e Anotações.
+5. Na aba Acordo, use Lançar (sem acordo) ou Editar. Em Dados do acordo informe a data da reunião, Escopo a partir de, Margem de atraso, Prazo do plano (até 12 meses; acima de 12 exige justificativa da exceção e acima de 18 exige REO vigente) e Inibição da DA. Monte Regras manuais por referência, Regras automáticas (Somente novos ou Todos) e Outros compromissos, confira Como o app entendeu e use Salvar acordo. Acompanhar mostra compromissos, a matriz por mês e previsto x realizado.
+6. Na aba Parcelamentos do detalhe, Omitir do acompanhamento retira das pendências e do acordo um parcelamento aderido antes da reunião do acordo; Voltar a acompanhar desfaz. Em Prazos e medidas, confira as zonas do prazo do plano e as medidas que cada prazo exige.
+7. Na aba Alertas, Agenda mostra os alertas previstos e os já disparados; Regras define o nível (Mínimo, Padrão, Rigoroso ou Personalizado), silenciar até uma data, resumo diário, repetição de alerta não lido, teto do valor em aberto e lembretes com data. Os alertas aparecem na central de notificações.
+8. Na aba Anotações, escreva em Nova anotação e use Salvar anotação. Para gravar também no PGDT, marque Registrar também no PGDT e escolha o tipo do acionamento. Cada anotação salva tem Registrar no PGDT, Editar e Apagar.
+9. Nas abas de dados, confira a linha da Base (período e data, com Atualizar agora ou Tentar de novo) e a linha do CADESP (data, com Atualizar). Em Clientes e Fornecedores, escolha 12 meses, 24 meses ou Tudo, meça por Valor ou ICMS, use as subabas Período escolhido e Antes x depois e organize os painéis em Personalizar painéis.
+10. Para carregar um CNPJ base fora da carteira, use Consultar CNPJ base manualmente e Carregar dados do contribuinte; a janela fecha sozinha quando a carga termina. Para desvincular, use o X ao lado do nome do contribuinte na faixa superior.
 
 Cuidados:
-- Este manual não descreve as regras internas da ferramenta de atribuição. Não presuma que abrir a página realiza uma atribuição.
-- Se a autenticação ou o carregamento falhar, confira a rede e sua autorização.
+- Vincular ou Consultar CNPJ base manualmente torna a empresa o contribuinte vinculado: ela passa a ser o alvo de Notificação, DEC, PGDT, SEI e REO. Confira o nome na faixa superior antes de qualquer gravação.
+- Registrar no PGDT a partir de uma anotação grava um acionamento real, visível a outros AFREs, com a data de hoje. Editar ou apagar a anotação depois muda só o aplicativo; o acionamento continua no PGDT. Apagar uma anotação não pode ser desfeito.
+- Acordo, omissão de parcelamento, anotações sem PGDT, alertas e lembretes ficam só no aplicativo. Atualizar lê PGDT, CADESP e BO e grava a Base na pasta do contribuinte.
+- Abrir uma aba não atualiza os dados. Confira as datas da Base, do CADESP e da carteira; Sem dados da Base ou uma falha não significam ausência de débito.
+- Contumácia, marcos do plano, previsão de encerramento e alertas são cálculos de apoio do aplicativo; a classificação do PGDT é apenas comparada. Eles não substituem a análise e a decisão do auditor.
+- Empresas com o selo Fictícia são exemplos sem dados reais. Notificar, Abrir no PGDT, medidas, encerramento, DEC, e-mail e SEI ficam bloqueados para elas. Restaurar exemplo devolve o exemplo original.
 
-## Início de acompanhamento > Acompanhar (PGDT)
+## Seleção do contribuinte > Atribuir e acompanhar (PGDT)
 
-Listar os próprios acompanhamentos e iniciar o acompanhamento do contribuinte vinculado.
+Receber a próxima empresa da lista de maiores inadimplentes não acompanhados e iniciar o acompanhamento dela no PGDT.
 
-Situação: Disponível
+Situação: Disponível; o botão Atribuir empresa pode aparecer esmaecido, com o motivo indicado na tela
 
-1. Confira o contribuinte vinculado em Dados do contribuinte. Em Contribuintes acompanhados, use Listar acompanhados para carregar a lista retornada pelo PGDT.
-2. Confira na tabela CNPJ-base, razão social, setorial, saldo devedor, débitos, dias acompanhado e dias desde o último acionamento. Limpar consulta apaga somente a tabela exibida.
-3. Para iniciar, use Iniciar acompanhamento e leia a confirmação com o contribuinte e o login do auditor antes de autorizar a gravação.
-4. Confira o retorno da ação no Andamento e, se necessário, atualize a lista para verificar o estado no PGDT.
+1. Abra a página e aguarde Preparando a conexão com o PGDT e o CADESP; o PIN pode ser pedido nesse momento.
+2. No cartão Atribuir empresa, use Atribuir empresa. O aplicativo pede a próxima empresa, aguarda a fila responder, confere no PGDT e no CADESP e pula as impedidas. Ao final mostra CNPJ, nome e o resultado da conferência; o e-mail de confirmação vai para você, com a chefia da equipe em cópia.
+3. Se o botão estiver esmaecido, leia o motivo abaixo dele (função em teste, desabilitada pela gestão ou acesso de convidado). Nesse caso, vincule o contribuinte pelo Painel de acompanhamento e use apenas o cartão Acompanhamento PGDT.
+4. Em Contribuinte a vincular, confira a empresa e a origem (atribuída a você, carregada no Painel ou informada manualmente). Use Iniciar acompanhamento, leia a confirmação e confirme em Iniciar acompanhamento.
+5. Use Listar acompanhados para ver o cartão Meus acompanhamentos, com CNPJ base, razão social, setorial, saldo devedor, débitos, dias acompanhado e dias do último acionamento.
+6. Exceção: somente com autorização prévia da chefia imediata, abra Informar CNPJ base manualmente, informe o CNPJ base e use Conferir. O resultado indica Livre, Impedida ou Não conferida; só depois inicie o acompanhamento.
 
 Cuidados:
-- Listar acompanhados é consulta; iniciar acompanhamento grava no PGDT. A ferramenta recusa contribuinte que já esteja entre seus acompanhados.
-- Não repita uma operação com resultado incerto sem conferir o PGDT. Cancelar não desfaz uma gravação já concluída.
-- A ajuda não altera o responsável nem autoriza acompanhamento de outra equipe.
+- Atribuir empresa não pede confirmação: um clique reserva a empresa e envia o e-mail com a chefia em cópia. Se a tela disser que a empresa foi atribuída, mas a confirmação não foi gravada, não clique de novo; avise o responsável.
+- Com PGDT ou CADESP fora do ar, a tela pede para tentar mais tarde e a mesma empresa reservada é conferida de novo. Fila vazia é informada na tela.
+- Iniciar acompanhamento grava no PGDT e é recusado se o contribuinte já tem acompanhamento aberto, seu ou de outro AFRE. Não repita resultado incerto sem conferir o PGDT; Cancelar não desfaz gravação concluída.
+- O CNPJ informado manualmente não substitui o botão Atribuir empresa e exige autorização prévia da chefia imediata.
 
 ## Início de acompanhamento > Notificação inicial
 
-Baixar pesquisas, preparar a notificação inicial e conduzir seu envio e registro.
+Baixar pesquisas, preparar a notificação inicial e conduzir seu envio pelo DEC e o registro no PGDT.
 
 Situação: Disponível
 
-1. Em Baixar pesquisas, confira o contribuinte vinculado e os períodos inicial e final em mês/ano. Marque as pesquisas necessárias: Classificação Nos Conformes e relatórios do Launchpad, além de CADESP, Débitos Declarados Não Inscritos ou Débitos Declarados Inscritos quando forem necessários.
-2. Abra Personalizar consultas para escolher o modo do CADESP e a origem dos Débitos Inscritos. Confira os relatórios e IDs configurados em Configurações antes de iniciar. Baixe as pesquisas e acompanhe cada resultado no Andamento.
-3. Se a execução terminar parcialmente, confira quais itens faltaram e use Resolver pendências; essa ação tenta novamente apenas o que não foi concluído. Use Abrir arquivos para conferir os arquivos baixados.
-4. Em Preparar notificação, confira o Início da inadimplência e o período de cada gráfico. Use as miniaturas para escolher e ajustar o período; Carregar gráficos novamente relê as planilhas. Para usar planilhas antigas, selecione ambas e clique Carregar; Limpar volta aos arquivos mais recentes.
-5. Confira a decisão dos parágrafos opcionais e avisos de dados ausentes. Gere a notificação e revise o DOCX, inclusive campos amarelos e trechos que dependem do auditor. Se desejar, abra o DOCX/PDF no visualizador; Converter em PDF exige que o documento esteja fechado e sincronizado. A caixa de assinatura controla a assinatura digital do PDF.
-6. Em Envio da notificação, confira o PDF usado. O padrão é a notificação gerada na etapa anterior; desmarque o uso automático para selecionar outro PDF. Escolha Apenas preparar rascunho DEC ou Enviar DEC e confira o resultado no Andamento.
-7. Em Registro no PGDT, confira os documentos padrão encontrados ou use Seleção manual. Revise data e relato do acionamento e confirme antes de Registrar Acionamento (PGDT). Confira separadamente o resultado do envio DEC e do registro PGDT.
+1. Em Baixar pesquisas, o CNPJ base vem do contribuinte vinculado. Informe Período inicial e Período final em MM/AAAA (ou pelo calendário). Marque as pesquisas: Classificação Nos Conformes e Base do contribuinte (principais, usadas na notificação), CQ Levantamento Inicial de Cobrança, CQ Acompanhado, CADESP, Débitos Declarados Não Inscritos em Dívida Ativa e Débitos Declarados Inscritos em Dívida Ativa.
+2. Em Personalizar consultas, escolha o modo do CADESP (Apenas matriz, Apenas as IEs ativas ou Todas as IEs) e a origem dos Débitos Inscritos: Site do contribuinte (padrão; uma janela do navegador abre e você resolve o captcha e clica em Consultar) ou SGU - SDA 3.0 (Minha Área SP; pede login gov.br e PIN). As escolhas ficam lembradas.
+3. Use Baixar pesquisas e acompanhe o Andamento. Se um arquivo já existir, escolha Criar nova versão, Substituir ou Cancelar. Se algo falhar, Resolver pendências refaz apenas o que faltou, com o mesmo CNPJ e período. Abrir arquivos abre a pasta; Limpar campos pergunta se limpa só o período ou também o CNPJ.
+4. Em Preparar notificação, confira o Início da inadimplência, preenchido com o início da última pesquisa. Clique numa miniatura para escolher o gráfico e arraste sobre o gráfico grande para marcar o período; os atalhos são Planilha inteira, Desde o início da inadimplência e Personalizado. O ícone de ampliar abre o gráfico maior. Carregar gráficos novamente relê as planilhas.
+5. Para usar planilhas antigas, abra Selecionar arquivos das pesquisas manualmente, escolha os arquivos do CQ Levantamento Inicial de Cobrança e do CQ Acompanhado e use Carregar; Limpar volta às pesquisas mais recentes.
+6. Use Gerar notificação. Se faltarem os prints do Nos Conformes, escolha Cancelar ou Gerar assim mesmo. Em Parágrafos opcionais, escolha Manter ou Eliminar para cada parágrafo e use Gerar. Revise o documento, inclusive os trechos em amarelo e as decisões do auditor.
+7. Abrir notificação .docx abre o documento no Word na web dentro do aplicativo (ou em prévia, com Editar no Word); Abrir notificação .pdf abre o PDF. Feche o documento e aguarde a sincronização antes de usar Converter em PDF. Assinar Notificação em PDF com Certificado Digital vem marcada e pede o PIN.
+8. Em Envio da notificação, o padrão é o PDF gerado; para usar outro, marque Selecionar arquivo da notificação manualmente. Apenas preparar rascunho DEC cria um rascunho; Enviar DEC pede confirmação e envia ao CNPJ da matriz. Confira o resultado e o PDF do DEC enviado, salvo na pasta do contribuinte.
+9. Em Registro no PGDT, use Documentação padrão (Notificação em PDF gerada e DEC enviado) ou Seleção manual. Abra Editar relato do acionamento para revisar data e relato; há modelos de relato. Use Registrar Acionamento (PGDT) e confirme.
 
 Cuidados:
 - Alterar o período dos gráficos não baixa pesquisas novas. Confira a data e a cobertura das planilhas antes de gerar o documento.
-- As pesquisas complementares têm critérios próprios e não são substituídas pela seleção manual das planilhas usadas nos gráficos/notificação.
-- O documento aberto para edição precisa estar fechado e sincronizado antes da conversão em PDF. Campos amarelos e trechos de decisão exigem revisão humana.
-- Sem confirmação do envio, confira Consultar mensagens no DEC antes de repetir. O registro no PGDT pode ter sido gravado mesmo se um anexo falhou depois.
-- Enviar DEC e registrar no PGDT são ações diferentes. A assinatura do PDF pode pedir seu próprio PIN; confira assinaturas em leitor adequado.
+- Substituir troca o arquivo atual, inclusive um PDF já assinado. Prefira Criar nova versão.
+- O captcha do Site do contribuinte é sempre resolvido por você. A rota SGU pode falhar no login; nesse caso, use o Site do contribuinte.
+- Apenas preparar rascunho DEC grava um rascunho no DEC, mas não envia. Sem confirmação do envio, confira Consultar mensagens no DEC antes de repetir.
+- O registro no PGDT fica visível a outros AFREs e pode ser gravado mesmo se um anexo falhar depois; confira no PGDT antes de repetir.
+- O visualizador interno pode não validar a assinatura ICP-Brasil do PDF; confira assinaturas em leitor adequado.
 
 ## Início de acompanhamento > Criar processo SEI
 
-Preparar documentos e criar o processo SEI para o contribuinte vinculado.
+Preparar documentos e criar o processo SEI do contribuinte vinculado.
 
 Situação: Disponível
 
-1. Em Documentos para inclusão, confira o CNPJ da matriz vinculado em Dados do contribuinte. Em Documentação padrão, marque os itens desejados: CADESP, Débitos Declarados Não Inscritos, Débitos Declarados Inscritos, Notificação Inicial, DEC com envio da Notificação Inicial e Outros.
-2. Em Personalizar consultas, escolha o modo do CADESP e a origem dos Débitos Inscritos. Confira o período dos Débitos Não Inscritos. Se os arquivos necessários já existem, confira se serão reaproveitados; quando a tela perguntar, escolha usar os disponíveis ou refazer a busca.
-3. Use Seleção manual para escolher os documentos diretamente. Nos itens numerados, selecione o PDF correspondente; em Outros, pode selecionar um ou mais arquivos. Confira o status de cada item e use Preparar documentação. Preparar documentos não cria o processo.
-4. Na aba Criar processo SEI, escolha Criar SEI e Incluir Documentos (1 passo) ou o fluxo em 2 passos. Revise, se necessário, assunto e especificação; confira interessado, número do processo e documentos preparados.
-5. Execute a criação/inclusão e acompanhe o Andamento. No fluxo de 2 passos, confira o retorno de Criar SEI antes de usar Incluir documentos. Verifique os documentos efetivamente incluídos.
+1. Em Documentos para inclusão, confira o CNPJ da matriz, que vem do contribuinte vinculado. Em Documentação padrão, marque CADESP, Débitos Declarados Não Inscritos, Débitos Declarados Inscritos, Notificação Inicial, DEC com envio da Notificação Inicial e Outros, conforme necessário.
+2. Em Personalizar consultas, escolha o modo do CADESP e a origem dos Débitos Inscritos. Arquivos já baixados são reaproveitados; para os Débitos Não Inscritos de outro período, o aplicativo pergunta: Baixar, Usar assim mesmo, Refazer a busca ou Cancelar (período em AAAAMM).
+3. Em Seleção manual, use Documento 1 a Documento 5 e Outros (um ou mais arquivos), com Selecionar e Limpar. A Notificação Inicial e o DEC são procurados na pasta do contribuinte; se não existirem, o aplicativo pede o arquivo.
+4. Use Preparar documentação e confira a etiqueta de cada item (Pendente, Preparando, Pronto, Falhou ou Não verificado). Se a documentação estiver incompleta, escolha Retornar ou Prosseguir mesmo assim. Depois de preparar, a seleção fica travada até Limpar campos.
+5. Na aba Criar processo SEI, escolha Criar SEI e Incluir Documentos (1 passo) ou (2 passos). Se quiser, abra Editar assunto e especificação do processo; vazio volta ao padrão. Use Criar SEI e incluir documentos, ou Criar SEI e depois Incluir documentos, e confira Dados do processo.
 
 Cuidados:
-- Criar o processo e incluir documentos alteram o SEI. Leia as confirmações; preparar documentação não equivale a criar o processo.
-- O processo usa o CNPJ da matriz do contribuinte vinculado. Sem contribuinte carregado, a criação é recusada.
-- Confira que cada PDF manual corresponde ao contribuinte e ao envio pretendidos. O comprovante DEC precisa corresponder à mensagem enviada.
-- Uma falha na inclusão após a criação pode deixar o processo criado com documentos faltando. Confira o SEI antes de repetir para evitar duplicidade.
+- Criar SEI e incluir documentos não pede confirmação: a criação é imediata. Confira tudo antes de clicar.
+- Exige contribuinte vinculado e UA do SEI, Usuário SEI e Token SEI preenchidos em Configurações.
+- Preparar documentação não cria o processo. Uma falha na inclusão pode deixar o processo criado com documentos faltando: confira o SEI antes de repetir.
+- Confira se cada PDF manual corresponde ao contribuinte e se o comprovante DEC corresponde à mensagem enviada.
 
 ## Início de acompanhamento > Reunião inicial
 
@@ -118,22 +128,27 @@ Cuidados:
 
 ## Acompanhamento > Acompanhamento mensal
 
-Preparar ou enviar mensagem pelo DEC e registrar o acionamento no PGDT.
+Selecionar débitos e parcelas do mês, gerar DAREs, enviar a mensagem pelo DEC e por e-mail e registrar o acionamento no PGDT.
 
 Situação: Disponível
 
-1. Confira o contribuinte vinculado e selecione os estabelecimentos destinatários. Cada destinatário recebe uma mensagem própria.
-2. Revise Categoria, Tributo, Tipo e Assunto em Classificação da mensagem. Confira o complemento do assunto, o texto e os anexos PDF; pode usar um modelo salvo ou gerenciar os próprios modelos.
-3. Escolha Apenas preparar rascunho DEC ou Enviar DEC. O rascunho não envia; o envio exige confirmação. Acompanhe o resultado de cada destinatário.
-4. Se houver falhas, confira o status por destinatário e use Resolver pendências para repetir somente os estabelecimentos oferecidos. Confira o PDF de cada mensagem enviada.
-5. Na aba Registro no PGDT, confira os anexos automáticos dos DEC enviados ou use Seleção manual. Revise data, tipo de acionamento e relato; o texto automático acompanha a mensagem efetivamente enviada enquanto não for editado. Confirme para registrar.
+1. Confira o contribuinte vinculado. Na linha da Base, use Atualizar agora (só os meses novos) ou Atualizar tudo (carga completa) se os dados estiverem desatualizados.
+2. Na aba Débitos, filtre Pendentes, Pagas, Parceladas / DA ou Todas e marque as referências que entram na mensagem. Atalhos: Marcar todas as pendências, Marcar pagas desde e Limpar seleção. O botão de IEs mostra cada inscrição; o ícone de impressora gera a guia DARE da referência em aberto.
+3. Na aba Parcelamentos, confira os parcelamentos em vigor e os encerrados, marque parcelas (Marcar as em atraso ou Marcar as 3 últimas pagas) e use o ícone de impressora para gerar o DARE de uma parcela em atraso ou a vencer. Os DAREs gerados viram anexos sugeridos no DEC, no e-mail e no PGDT.
+4. Em Envio do DEC, os destinatários começam pela matriz; use Só a matriz, Todos os ativos, Todos com IE ou Desmarcar. Abra Classificação da mensagem para revisar Categoria, Tributo, Tipo e Assunto, lidos do DEC (pode pedir o PIN). Preencha o Complemento do assunto.
+5. Escolha o Modelo. O modelo Acompanhamento mensal monta o texto conforme a seleção: pendências de recolhimento, parcelas a vencer, itens quitados e outras referências. Se você editar o texto e a seleção mudar, use Atualizar o texto. Os ícones Salvar como modelo e Gerenciar modelos administram seus modelos.
+6. Inclua anexos PDF com + Adicionar anexo. Use Apenas preparar rascunho DEC (cria rascunhos e abre a lista de Rascunhos do DEC) ou Enviar DEC (pede confirmação). Confira o status de cada destinatário; Resolver pendências repete só os que falharam.
+7. Em Envio de e-mail, use Varrer o CADESP para encontrar contatos, marque-os e use Salvar lista de contatos; também é possível adicionar contato informado pelo contribuinte. Escolha modelo e assunto, confira a assinatura e os anexos (até 3 MB no total) e use Enviar e-mail. Uma cópia em PDF é salva na pasta do contribuinte.
+8. Em Registro no PGDT, confira os anexos automáticos (DEC enviado, PDF do e-mail, DAREs e anexos da mensagem) ou use Seleção manual. Confira data, Tipo do acionamento (padrão Acordo de Regularização – Verificação Mensal) e o relato automático, que descreve o que foi enviado; sem DEC nem e-mail, ele registra a verificação do mês. Use Registrar Acionamento (PGDT) e confirme.
 
 Cuidados:
-- O DEC pode rejeitar anexos por nome; nomes com parênteses não são aceitos. Confira o aviso e a lista antes de enviar.
-- Não repita envio incerto: confira Consultar mensagens no DEC. Cancelar não desfaz envio já concluído.
-- Trocar o texto ou modelo depois do envio não altera a mensagem enviada. Se o envio foi concluído mas o PDF não foi baixado, obtenha o comprovante e escolha-o manualmente antes do registro PGDT.
-- Acompanhamento mensal e Notificação final mantêm destinatários, texto e pendências separados. Aguarde a operação terminar antes de alternar entre elas.
-- Enviar DEC e registrar o acionamento no PGDT são gravações distintas. Se o registro falhar após o DEC, confira cada sistema antes de tentar novamente.
+- Enviar DEC, Enviar e-mail e Registrar Acionamento (PGDT) enviam ou gravam de verdade. O rascunho grava um rascunho no DEC sem enviar.
+- Destinatário com status Sem confirmação não entra em Resolver pendências: confira Consultar mensagens no DEC antes de repetir. E-mail sem confirmação: confira Itens Enviados do Outlook.
+- A guia DARE da referência vence no dia da emissão, com multa e juros até a data; em outro dia, gere nova guia. Referência a vencer, paga ou parcelada não tem guia.
+- O DEC recusa anexos com parênteses no nome e dois anexos com o mesmo nome. Um rascunho com anexo recusado pode ficar sem anexo: confira a lista de Rascunhos.
+- Mudar o texto ou o modelo depois do envio não altera o que foi enviado. Se o envio foi concluído mas o PDF não foi baixado, obtenha o comprovante e selecione-o manualmente antes do registro.
+- O registro no PGDT exige ao menos um arquivo anexado e pode ficar gravado mesmo se um anexo falhar depois.
+- Acompanhamento mensal e Notificação final mantêm destinatários, texto e pendências separados. Aguarde a operação terminar antes de alternar.
 
 ## Regimes Especiais de Ofício > Nota a Nota
 
@@ -144,13 +159,13 @@ Situação: Disponível
 1. Confira o contribuinte vinculado e informe as datas inicial e final em DD/MM/AAAA; o calendário também pode ser usado. O período sugerido é o mês completo anterior.
 2. Marque as pesquisas necessárias: NFe (SP), NFe (Outras UFs), NFe NCMs (SP), NFe NCMs (Outras UFs), CTe e DAREs. Se DAREs estiver marcada, confira se o ID do relatório foi configurado em Configurações > Relatórios.
 3. Use Baixar pesquisas e acompanhe cada pesquisa no Andamento. Os relatórios são salvos em pastas separadas por período.
-4. Quando NFe e DAREs concluírem com sucesso na mesma execução, confira a planilha Analise REO Nota-a-Nota e o resumo na tela. Informe o percentual exigido de ICMS Opp antes de interpretar o resumo; ICMS-ST usa o percentual indicado na tela.
+4. Quando ao menos uma pesquisa de NFe e a de DAREs concluírem com sucesso na mesma execução, confira a planilha Analise REO Nota-a-Nota e o resumo na tela. Informe o percentual exigido de ICMS Opp antes de interpretar o resumo (sem ele, a coluna mostra A definir); o ICMS-ST usa 100%.
 
 Cuidados:
 - A análise depende de NFe e DAREs concluídas com sucesso na mesma execução. Arquivos de rodadas diferentes não completam esse requisito.
 - Download parcial não significa análise completa. Confira falhas e avisos antes de usar o resultado.
 - O resumo apresenta alertas e estimativas para revisão; não altera códigos nem confirma, sozinho, irregularidade ou valor devido.
-- Nova análise preserva a anterior como nova versão. Confira o período e os arquivos antes de compartilhar a planilha.
+- Nova análise preserva a anterior como nova versão. Confira o período e os arquivos antes de compartilhar a planilha. A pasta base precisa estar definida em Configurações.
 
 ## Regimes Especiais de Ofício > Controle de emissão
 
@@ -159,7 +174,7 @@ Consultar as quantidades de documentos fiscais eletrônicos emitidos no período
 Situação: Disponível
 
 1. Confira o contribuinte vinculado e informe o período inicial e final em MM/AAAA, usando o calendário se preferir.
-2. Use Baixar pesquisa e acompanhe o Andamento. A consulta exige que o relatório Qtde Docs Fiscais Emitidos esteja configurado em Configurações > Relatórios.
+2. Use Baixar pesquisa e acompanhe o Andamento. A consulta exige o ID do relatório Qtde Docs Fiscais Emitidos em Configurações > Relatórios.
 3. Confira as abas RESUMO, CNPJ BASE e Por CNPJ. Dentro de cada aba, compare os blocos e cabeçalhos; use a rolagem horizontal quando aparecer.
 4. Use Abrir arquivos para conferir a planilha salva na pasta Controle de Emissão do contribuinte.
 
@@ -173,7 +188,7 @@ Abrir o agente institucional de análise de garantias em ambiente Microsoft 365.
 
 Situação: Disponível como agente separado
 
-1. Abra Parcelamento com garantia e aguarde o agente institucional carregar.
+1. Abra Parcelamento com garantia e aguarde o agente institucional carregar dentro do aplicativo, com a sua conta do Microsoft 365.
 2. Confira a identificação do agente e siga suas orientações dentro das regras institucionais.
 
 Cuidados:
@@ -193,21 +208,20 @@ Cuidados:
 
 ## Encerramento > Notificação final
 
-Preparar ou enviar a notificação de encerramento pelo DEC e registrar o acionamento.
+Preparar ou enviar a notificação de encerramento pelo DEC e registrar o acionamento no PGDT.
 
 Situação: Disponível
 
-1. Confira o contribuinte vinculado e selecione os estabelecimentos destinatários. A primeira abertura usa o modelo Notificação de Encerramento de Acompanhamento.
-2. Revise Categoria, Tributo, Tipo e Assunto; confira complemento, texto e anexos PDF. Use um modelo salvo se desejar e confira o texto preenchido.
-3. Escolha Apenas preparar rascunho DEC ou Enviar DEC. Rascunho não envia; o envio pede confirmação e pode ter resultado diferente por destinatário.
-4. Confira o retorno e o PDF de cada destinatário. Se houver erro, use Resolver pendências apenas para os destinatários apresentados.
-5. Na aba Registro no PGDT, confira os anexos dos DEC enviados ou escolha arquivos manualmente. Revise data, tipo Encerramento do Acompanhamento e relato antes de registrar.
+1. Confira o contribuinte vinculado. A página abre em Envio do DEC e não tem as abas Débitos, Parcelamentos nem Envio de e-mail. A primeira abertura usa o modelo Notificação de Encerramento de Acompanhamento.
+2. Selecione os destinatários, revise a Classificação da mensagem, o Complemento do assunto, o texto e os anexos PDF.
+3. Use Apenas preparar rascunho DEC ou Enviar DEC (com confirmação). Confira o status e o PDF de cada destinatário; Resolver pendências repete apenas os que falharam.
+4. Em Registro no PGDT, confira os anexos dos DEC enviados ou use Seleção manual. Revise data, tipo Encerramento do Acompanhamento e relato, e use Registrar Acionamento (PGDT).
 
 Cuidados:
-- Enviar a notificação final não equivale a encerrar o acompanhamento no PGDT. Essa é uma ação separada.
+- Enviar a notificação final e registrar o acionamento não encerram o acompanhamento no PGDT. Use Encerramento > Encerrar (PGDT), que é uma ação separada.
 - Acompanhamento mensal e Notificação final mantêm textos, destinatários e pendências separados.
-- Não repita envio incerto; confira Consultar mensagens no DEC. Cancelar não desfaz um envio já feito.
-- O registro PGDT pode falhar depois do envio DEC ou do próprio registro; confira cada sistema e anexo antes de repetir.
+- Não repita envio incerto: confira Consultar mensagens no DEC. Cancelar não desfaz um envio já feito.
+- O registro no PGDT pode falhar depois do envio DEC ou do próprio registro; confira cada sistema e anexo antes de repetir.
 
 ## Encerramento > Encerrar (PGDT)
 
@@ -215,13 +229,14 @@ Encerrar no PGDT um acompanhamento próprio e aberto.
 
 Situação: Disponível; exige conferência do resultado no PGDT
 
-1. Confira o contribuinte vinculado e consulte os acompanhamentos.
-2. Confirme que o acompanhamento é seu e está aberto. Leia a confirmação antes de usar Encerrar acompanhamento.
-3. Confira o retorno e o estado final no PGDT.
+1. Confira o contribuinte vinculado. Se quiser, use Listar acompanhados para conferir a lista em Meus acompanhamentos; Limpar consulta apaga só a tabela.
+2. Use Encerrar acompanhamento, leia o modal Encerrar acompanhamento PGDT e confirme em Encerrar acompanhamento.
+3. O aplicativo confere se o acompanhamento é seu e está aberto; se não estiver, informa que nada foi encerrado. Confira o retorno e o estado final no PGDT.
 
 Cuidados:
-- O encerramento altera o PGDT e não é desfeito por Cancelar. Não encerra nem arquiva automaticamente um processo SEI.
-- Se o PGDT recusar ou não confirmar o resultado, confira a situação antes de repetir. A ajuda não fornece justificativa nem autoriza encerramento de acompanhamento de outra pessoa.
+- O encerramento altera o PGDT e não é desfeito por Cancelar. Não arquiva processo SEI nem envia notificação.
+- O aplicativo não envia justificativa. Se o PGDT pedir uma, nada é encerrado: informe o responsável.
+- Em resultado incerto, confira a situação no PGDT antes de repetir. A ajuda não autoriza encerrar acompanhamento de outra pessoa.
 
 ## Encerramento > Arquivamento SEI
 
@@ -361,6 +376,7 @@ Situação: Disponível como página institucional
 2. Abra Folha de ponto e aguarde a planilha correspondente carregar. Se não houver equipe válida, corrija a seleção permitida antes de repetir.
 
 Cuidados:
+- Sem equipe salva, a página pede para informar a equipe em Configurações e repetir. A equipe Convidados não tem Folha de ponto no aplicativo.
 - Não escolha equipe diferente da sua autorização. A ajuda não altera a planilha nem interpreta regras de frequência não descritas neste manual.
 
 ## Recursos Humanos > Planilha de Férias
@@ -377,38 +393,158 @@ Cuidados:
 
 ## Recursos Humanos > Teletrabalho
 
-Montar o rascunho mensal de atividades e preparar seu preenchimento no SIGET.
+Montar o rascunho mensal de atividades e preparar o preenchimento do termo no SIGET.
 
 Situação: Disponível
 
 1. Confira o Mês de referência. Na primeira abertura, os meses começam vazios; o rascunho de cada mês é salvo pelo aplicativo.
-2. Em Atividades cadastradas, use Nova atividade para criar uma sugestão com atividade, tipo, detalhamento e instrução de quantidade. Use Editar atividade para ajustar ou excluir uma sugestão existente.
-3. Use Adicionar para copiar uma atividade para o mês e ajuste a quantidade no rascunho. O detalhamento total mostra o texto que será inserido no termo do SIGET.
-4. Use Importar do mês anterior para copiar as atividades do mês anterior mais recente que tenha itens. Se o mês atual já estiver preenchido, confira a confirmação antes de substituir.
-5. Use Restaurar atividades padrão para recuperar sugestões padrão excluídas. Confira mês, atividades, quantidades e detalhamento; Limpar remove apenas as atividades do mês selecionado.
-6. Use Preencher termo no SIGET e acompanhe o Andamento. No navegador aberto, confira o mês e os dados, marque a declaração e salve ou assine pessoalmente.
+2. Em Atividades cadastradas, use Nova atividade para criar uma sugestão com atividade, Tipo de atividade, detalhamento e instrução de quantidade. Para ajustar uma sugestão, use Editar; no formulário Editar atividade há Salvar atividade e Excluir atividade. As setas reordenam o catálogo.
+3. Use Adicionar para copiar uma atividade para o mês e ajuste a quantidade. No mês, o nome da atividade é só leitura; use Remover para tirar uma linha e as setas para reordenar. O campo Detalhamento das atividades mostra o texto que será inserido no SIGET.
+4. Use Importar do mês anterior para copiar as atividades do mês anterior mais recente que tenha itens; se o mês atual já estiver preenchido, confira a confirmação antes de substituir. Restaurar atividades padrão recupera sugestões padrão excluídas. Limpar remove apenas as atividades do mês selecionado.
+5. Use Preencher termo no SIGET e acompanhe o Andamento; Cancelar interrompe. No navegador aberto, confira o mês e os dados, marque a declaração e salve ou assine pessoalmente.
 
 Cuidados:
-- A ferramenta prepara e preenche o SIGET, mas não salva nem assina o termo. Essas ações são feitas por você no próprio sistema.
+- A ferramenta preenche o SIGET, mas não salva nem assina o termo. Essas ações são feitas por você no próprio sistema.
 - A atividade do catálogo é copiada para o mês. Editar o catálogo não modifica cópias já adicionadas.
-- Atividades sem opção específica no SIGET podem ser agrupadas em Outros. Confira o detalhamento final e se o mês está disponível no sistema antes de salvar.
+- Atividades sem opção específica no SIGET podem ser agrupadas em Outros. Confira o detalhamento final e se o mês está disponível no SIGET antes de salvar.
 - Importar e Limpar atuam no mês selecionado. Confira a referência antes de confirmar.
+
+## Gestão > Controle hierárquico
+
+Consultar e manter os acessos ao aplicativo e as equipes atribuídas aos membros.
+
+Situação: Restrito a usuários autorizados de Gestão
+
+1. Na aba Membros e equipes, use Atualizar controle hierárquico para ler a unidade e os detalhes de cada membro. Confira a tabela (Nome, Login, Tipo, Função SIAP, NSEs, Padrão e Equipes) e as diferenças em relação à última gravação.
+2. Use Gravar tabela somente quando estiver autorizado e depois de revisar as alterações; Cancelar interrompe a leitura em curso.
+3. Na aba Configuração inicial, use Obter acesso apenas na primeira vez, para preparar este computador e pedir a inclusão da sua chave aos desenvolvedores. Depois que o acesso estiver pronto, o botão se apaga.
+
+Cuidados:
+- Gravar tabela muda o acesso e as equipes de todos os colegas na próxima abertura do aplicativo. Não grave sem autorização formal e conferência da lista inteira.
+- Se a leitura falhar ou as diferenças forem inesperadas, não grave; peça orientação ao responsável pela Gestão.
+
+## Gestão > Atribuir empresa
+
+Revisar a fila de empresas, as atribuições e as situações que exigem decisão de Gestão.
+
+Situação: Restrito a usuários autorizados de Gestão
+
+1. Use Recarregar e confira as abas Lista, Atribuídas, Impedidas, Não atribuir, Histórico, Atualização e Habilitar/Desabilitar. Use a busca, o filtro de situação, os filtros por coluna e Limpar filtros para localizar empresas.
+2. Selecione apenas as empresas revisadas. Use Conferir PGDT e CADESP antes de decidir; a tela pode perguntar se a conferência usa o BO (dados do dia anterior), o PGDT ou os dois. Parar interrompe a conferência.
+3. Confira a ação antes de usar Devolver à fila, Levar para Não atribuir (com motivo), Remover de Impedidas ou Remover de Não atribuir (exige justificativa).
+4. Na aba Não atribuir, em Incluir empresas, informe um CNPJ base por linha, use Conferir para ver a prévia e Incluir para gravar. Na aba Impedidas, ajuste os Prazos das impedidas e use Salvar prazos. Na aba Atualização, Atualizar lista agora recarrega a lista do Power BI.
+5. No Histórico, use Exportar histórico, escolha eventos, período e formato (Excel ou PDF, com opção de assinar o PDF) e use Exportar; Abrir arquivos mostra o resultado. Em Habilitar/Desabilitar, ligue ou desligue o botão Atribuir empresa para todos os usuários somente com autorização.
+
+Cuidados:
+- As alterações afetam a fila compartilhada e o que os usuários recebem. Confira seleção, motivo e situação antes de gravar.
+- Retorno ou remoção de impedidas exige conferência do PGDT e do CADESP; ausência de dados não é liberação automática.
+- A exportação com assinatura pede o PIN. Esta tela é administrativa: em caso de divergência, pare e consulte o responsável.
+
+## Devs > Relatórios de uso
+
+Consultar indicadores de uso do aplicativo no ambiente de desenvolvimento.
+
+Situação: Exclusivo do aplicativo de desenvolvimento e de usuários autorizados
+
+1. Esta página não é destinada ao uso operacional. Usuários sem autorização de desenvolvimento devem sair sem consultar nem exportar os dados.
+
+Cuidados:
+- Os relatórios podem conter informações de uso por equipe, versão e usuário. Não exporte nem compartilhe fora do escopo autorizado.
+
+## Devs > Relatos
+
+Área interna de triagem e acompanhamento de relatos enviados pelos usuários.
+
+Situação: Exclusivo do aplicativo de desenvolvimento e de usuários autorizados
+
+1. Usuários finais devem acompanhar seus próprios envios em Ajuda > Meus relatos. Esta página interna não é um canal de consulta geral.
+
+Cuidados:
+- Relatos podem conter contexto pessoal ou operacional. Acesse somente quando autorizado e não reproduza dados em conversas de ajuda.
+
+## Devs > Correções
+
+Área interna de desenvolvimento para preparar correções de código.
+
+Situação: Exclusivo do aplicativo de desenvolvimento e de usuários autorizados
+
+1. Não é uma função operacional do DTCob. Usuários finais devem usar Ajuda > Relatar um problema.
+
+Cuidados:
+- Ações nesta área podem alterar uma branch de desenvolvimento. Não opere nem compartilhe código sem autorização.
+
+## Devs > Melhorias
+
+Área interna para organizar melhorias planejadas para o aplicativo.
+
+Situação: Exclusivo do aplicativo de desenvolvimento e de usuários autorizados
+
+1. Não é uma função operacional do DTCob. Para enviar uma sugestão, use Ajuda > Sugerir uma melhoria.
+
+Cuidados:
+- O conteúdo desta página é de planejamento interno e não confirma que uma melhoria será implementada ou publicada.
+
+## Devs > Publicação
+
+Área interna de preparação e acompanhamento de versões do aplicativo.
+
+Situação: Exclusivo do aplicativo de desenvolvimento e de responsáveis pela publicação
+
+1. Não é uma função operacional do DTCob. Usuários finais devem aguardar a atualização oficial do aplicativo.
+
+Cuidados:
+- Publicar pode alterar o aplicativo compartilhado. Não selecione itens nem inicie a publicação sem autorização específica.
+
+## Devs > Acessos
+
+Área interna de configuração de acessos e permissões do aplicativo.
+
+Situação: Exclusivo do aplicativo de desenvolvimento e de usuários autorizados
+
+1. Não é uma função operacional do DTCob. Usuários finais devem solicitar acesso pelo canal institucional responsável.
+
+Cuidados:
+- Alterações podem conceder ou retirar acesso de outras pessoas. Não grave mudanças sem autorização formal.
+
+## Devs > Painel de acompanhamento (dev)
+
+Área interna de teste do Painel de acompanhamento.
+
+Situação: Exclusivo do aplicativo de desenvolvimento
+
+1. Não use esta página para consultar ou registrar dados reais. No aplicativo normal, use Painel de acompanhamento.
+
+Cuidados:
+- A área de desenvolvimento pode exibir dados fictícios ou cenários de teste e não representa o estado real do PGDT.
+
+## Devs > Configurações (dev)
+
+Área interna de opções em preparação para desenvolvimento e testes.
+
+Situação: Exclusivo do aplicativo de desenvolvimento
+
+1. As opções exibidas podem estar desabilitadas ou em desenvolvimento. Usuários finais devem usar Configurações, fora do menu Devs.
+
+Cuidados:
+- Não altere opções de teste para tentar liberar funções do aplicativo normal.
 
 ## Configurações
 
-Conferir identificação, equipe, armazenamento, relatórios e atualizações.
+Conferir identificação, equipe, dados do SEI, Plano de Trabalho, armazenamento, relatórios e atualizações.
 
 Situação: Disponível
 
-1. Na aba Usuário, confira Nome completo e Login preenchidos pela identificação. Selecione uma equipe permitida e o tratamento de identificação usado nos documentos.
-2. Preencha UA e Usuário SEI conforme a orientação exibida na própria tela. Informe o Token SEI no campo próprio ou use Tentar obter o token SEI automaticamente.
-3. Em Armazenamento, selecione a pasta-base onde o aplicativo organiza subpastas por contribuinte. Salve as alterações das abas Usuário e Relatórios pelo botão Salvar.
-4. Na aba Relatórios, confira os IDs do Launchpad da Base da notificação, CQ Levantamento, CQ Acompanhado, DARE da Nota a Nota e Qtde Docs Fiscais Emitidos. Marque os relatórios desejados em Configurar IDs dos relatórios automaticamente e use Configurar IDs; depois confira os valores preenchidos.
-5. Na configuração de Notificação inicial, revise os limites dos parágrafos opcionais 6, 9 e 10, se aplicável. Em Atualizações, confira as versões do aplicativo e instalador, use Procurar atualizações e, se houver, Atualizar. Acompanhe o progresso; use Cancelar download ou Abrir registro quando necessário.
+1. Na aba Usuário, confira Nome completo (pelo certificado) e Login, preenchidos pela identificação. Em Selecione sua equipe, escolha uma equipe permitida; em Como deseja ser identificado?, escolha o tratamento usado nos documentos.
+2. Preencha UA do SEI (por exemplo, SFP-12345) e Usuário SEI (apenas números). Informe o Token SEI no campo próprio ou use Tentar obter o token SEI automaticamente, que abre o navegador e pode pedir o login gov.br; Cancelar interrompe.
+3. No cartão Plano de Trabalho, escolha a Página ao abrir o app, a Redução da meta da carteira (Nenhuma, Chefe de NSE ou Atividade extraordinária) e se deve Atualizar o Plano de Trabalho ao abrir o app.
+4. Na aba Relatórios, em Armazenamento, use Selecionar pasta para definir a Pasta padrão do aplicativo, onde ficam as pastas de cada contribuinte.
+5. Em Relatórios Launchpad - IDs, confira Base do contribuinte, CQ Levantamento Inicial, CQ Acompanhado, DARE - REO Nota a Nota, Qtde Docs Fiscais Emitidos e Base do Contribuinte - Auxiliar. Para preencher automaticamente, abra Configurar IDs dos relatórios automaticamente, marque os relatórios e use Configurar IDs; depois confira os valores.
+6. No cartão Base do contribuinte, defina o Início padrão (janeiro de 1 a 10 anos atrás). No cartão Notificação inicial, revise os limites dos Parágrafos 6, 9 e 10. Salve as abas Usuário e Relatórios pelo botão Salvar.
+7. Na aba Atualizações, confira as linhas Aplicativo e Instalador, use Procurar atualizações e, havendo novidade, Atualizar. Use Cancelar download ou Abrir registro quando necessário.
 
 Cuidados:
-- Nome e Login vêm da identificação e são somente leitura. Equipes disponíveis dependem da autorização; escolha apenas uma equipe permitida.
-- Token SEI é credencial: preencha somente no campo próprio ou use a rotina automática; nunca envie à ajuda.
-- IDs são necessários às pesquisas que os usam. Se um ID for esvaziado após uma troca de relatório, configure-o novamente antes de baixar.
+- Nome e Login vêm da identificação e são somente leitura. As equipes disponíveis dependem da autorização; escolha apenas uma equipe permitida.
+- O Token SEI é credencial: preencha somente no campo próprio ou use a rotina automática; nunca envie à ajuda. A senha do gov.br vai apenas nas telas do gov.br.
+- Os IDs são necessários às pesquisas que os usam. Se um ID for esvaziado após uma troca de relatório, configure-o novamente antes de baixar. Configurar IDs pode publicar o relatório na sua pasta pessoal do Launchpad quando ele não existir.
 - Uma pasta compartilhada pode expor documentos exportados. Escolha um local com acesso restrito e não altere dados de outro usuário.
 - Reinicie para aplicar a atualização quando o aplicativo solicitar e depois que as operações em curso terminarem.
