@@ -1,0 +1,82 @@
+name: Publicar manual Ajuda
+
+on:
+  push:
+    branches: [main]
+    paths: [MANUAL_AgenteCopilot.txt]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Preparar o artefato público
+        run: |
+          python - <<'PY'
+          from datetime import datetime, timedelta, timezone
+          from pathlib import Path
+          import re
+
+          source = Path('MANUAL_AgenteCopilot.txt')
+          text = source.read_text(encoding='utf-8')
+          if len(re.findall(r'(?m)^ULTIMA_ATUALIZACAO:', text)) > 1:
+              raise SystemExit('Campo ULTIMA_ATUALIZACAO duplicado')
+          text = re.sub(r'(?m)^ULTIMA_ATUALIZACAO:.*(?:\n|$)', '', text)
+          text = text.lstrip('\n')
+          fuso = timezone(timedelta(hours=-3))
+          atualizacao = datetime.now(fuso).isoformat(timespec='seconds')
+          site = Path('site')
+          site.mkdir(exist_ok=True)
+          with (site / source.name).open('w', encoding='utf-8', newline='\n') as arquivo:
+              arquivo.write(f'ULTIMA_ATUALIZACAO: {atualizacao}\n{text}')
+          (site / 'robots.txt').write_text('User-agent: *\nAllow: /\n', encoding='utf-8')
+          PY
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4
+      - name: Validar URL publicada sem autenticação
+        env:
+          PAGES_URL: ${{ steps.deploy.outputs.page_url }}
+        run: |
+          python - <<'PY'
+          import os
+          import re
+          import urllib.request
+
+          base = os.environ['PAGES_URL'].rstrip('/')
+          url = base + '/MANUAL_AgenteCopilot.txt'
+          with urllib.request.urlopen(url, timeout=30) as resposta:
+              if resposta.status != 200:
+                  raise SystemExit(f'HTTP inesperado: {resposta.status}')
+              if resposta.headers.get_content_type() != 'text/plain':
+                  raise SystemExit('O manual não foi servido como text/plain')
+              if 'noindex' in resposta.headers.get('X-Robots-Tag', '').lower():
+                  raise SystemExit('A resposta impede indexação')
+              texto = resposta.read().decode('utf-8')
+          primeira = texto.splitlines()[0] if texto.splitlines() else ''
+          padrao = r'ULTIMA_ATUALIZACAO: \d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}-03:00'
+          if not re.fullmatch(padrao, primeira):
+              raise SystemExit('Timestamp ausente ou fora do formato esperado')
+          with urllib.request.urlopen(base + '/robots.txt', timeout=30) as robots:
+              regras = robots.read().decode('utf-8')
+          if 'User-agent: *' not in regras or 'Allow: /' not in regras:
+              raise SystemExit('robots.txt não permite indexação geral')
+          print(f'HTTP 200; text/plain; timestamp válido: {primeira}')
+          PY
